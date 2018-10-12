@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 
-void helooWorld(){
+void helloWorld(){
     printf("\nHello World!\n");
 }
 
@@ -19,8 +19,8 @@ int lerNumeroInteiro(){
     return numero;
 }
 
-int main2(){
-    helooWorld();
+int main(){
+    helloWorld();
     
     int a = somar2valores(3, 39);
     printf("O resultado da soma: %i\n", a);
