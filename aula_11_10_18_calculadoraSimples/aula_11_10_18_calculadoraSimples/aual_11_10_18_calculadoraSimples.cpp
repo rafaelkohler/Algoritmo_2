@@ -23,8 +23,8 @@ double divisao(double x, double y){
 
 double lerNumero(){
     printf("\nFavor digitar o valor da operacao: ");
-    int numero;
-    scanf("%i", &numero);
+    double numero;
+    scanf("%lf", &numero);
     return numero;
 }
 
@@ -40,7 +40,7 @@ int main(){
             double x = lerNumero();
             double y = lerNumero();
             double r = soma(x, y);
-            printf("\nO resultado da soma eh: %.2f", r);
+            printf("\nO resultado da soma eh: %.4lf", r);
         }
             break;
             
@@ -48,7 +48,7 @@ int main(){
             double s1 = lerNumero();
             double s2 = lerNumero();
             double s3 = subtracao(s1, s2);
-            printf("\nO resultado da subtracao eh: %.2f", s3);
+            printf("\nO resultado da subtracao eh: %.4lf", s3);
         }
             break;
             
@@ -56,7 +56,7 @@ int main(){
             double m1 = lerNumero();
             double m2 = lerNumero();
             double m3 = multiplicacao(m1, m2);
-            printf("\nO resultado da multiplicacao eh: %.2f", m3);
+            printf("\nO resultado da multiplicacao eh: %.4lf", m3);
         }
             break;
             
@@ -64,7 +64,7 @@ int main(){
             double d1 = lerNumero();
             double d2 = lerNumero();
             double d3 = divisao(d1, d2);
-            printf("\nO resultado da divisao eh: %.2f", d3);
+            printf("\nO resultado da divisao eh: %.4lf\n", d3);
         }
             break;
             
