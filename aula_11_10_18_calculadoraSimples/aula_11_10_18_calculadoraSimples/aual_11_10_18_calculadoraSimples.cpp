@@ -2,26 +2,22 @@
 #include <stdio.h>
 
 double soma(double x, double y){
-    double resultSoma;
-    resultSoma = x + y;
+    double resultSoma = x + y;
     return resultSoma;
 }
 
 double subtracao(double x, double y){
-    double resultSubtracao;
-    resultSubtracao = x - y;
+    double resultSubtracao = x - y;
     return resultSubtracao;
 }
 
 double multiplicacao(double x, double y){
-    double resultMultiplicacao;
-    resultMultiplicacao = x * y;
+    double resultMultiplicacao = x * y;
     return resultMultiplicacao;
 }
 
 double divisao(double x, double y){
-    double resultDivisao;
-    resultDivisao = x / y;
+    double resultDivisao = x / y;
     return resultDivisao;
 }
 
@@ -44,7 +40,7 @@ int main(){
             double x = lerNumero();
             double y = lerNumero();
             double r = soma(x, y);
-            printf("\nO resultado da soma eh: %2f", r);
+            printf("\nO resultado da soma eh: %.2f", r);
         }
             break;
             
@@ -52,7 +48,7 @@ int main(){
             double s1 = lerNumero();
             double s2 = lerNumero();
             double s3 = subtracao(s1, s2);
-            printf("\nO resultado da subtracao eh: %2f", s3);
+            printf("\nO resultado da subtracao eh: %.2f", s3);
         }
             break;
             
@@ -60,7 +56,7 @@ int main(){
             double m1 = lerNumero();
             double m2 = lerNumero();
             double m3 = multiplicacao(m1, m2);
-            printf("\nO resultado da multiplicacao eh: %2f", m3);
+            printf("\nO resultado da multiplicacao eh: %.2f", m3);
         }
             break;
             
@@ -68,7 +64,7 @@ int main(){
             double d1 = lerNumero();
             double d2 = lerNumero();
             double d3 = divisao(d1, d2);
-            printf("\nO resultado da divisao eh: %2f", d3);
+            printf("\nO resultado da divisao eh: %.2f", d3);
         }
             break;
             
@@ -83,3 +79,4 @@ int main(){
     } while (resp == 1);
 
 }
+
