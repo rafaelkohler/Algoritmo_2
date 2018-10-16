@@ -10,8 +10,7 @@ int subtracao(int x, int y){
     return a;
 }
 
-double divi(double x, double
-            y){
+double divi(double x, double y){
     double a = x / y;
     return (double) a;
 }
