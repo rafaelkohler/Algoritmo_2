@@ -1,12 +1,12 @@
 #include <iostream>
 
-int soma(int x, int y){
-    int a = x + y;
+float soma(float x, float y){
+    float a = x + y;
     return a;
 }
 
-int subtracao(int x, int y){
-    int a = x - y;
+float subtracao(float x, float y){
+    float a = x - y;
     return a;
 }
 
@@ -15,29 +15,32 @@ double divi(double x, double y){
     return (double) a;
 }
 
-int mult(int x, int y){
-    int a = x * y;
+float mult(float x, float y){
+    float a = x * y;
+    return a;
+}
+
+double lerNumeroInteiro(){
+    float a;
+    printf("\nFavor digitar um numero inteiro: ");
+    scanf("%f", &a);
     return a;
 }
 
 int main() {
-    int a;
-    printf("\nFavor digitar um numero inteiro: ");
-    scanf("%i", &a);
+   
+    double primeiroValor = lerNumeroInteiro();
+    double segundoValor = lerNumeroInteiro();
     
-    int b;
-    printf("\nFavor digitar um numero inteiro: ");
-    scanf("%i", &b);
+    float r = soma(primeiroValor, segundoValor);
+    float s = subtracao(primeiroValor, segundoValor);
+    double d = divi((double)primeiroValor, (double)segundoValor);
+    float m = mult(primeiroValor, segundoValor);
     
-    int r = soma(a, b);
-    int s = subtracao(a, b);
-    double d = divi((double)a, (double)b);
-    int m = mult(a, b);
-    
-    printf("\nValor da soma: %i\n", r);
-    printf("\nValor da subtracao: %i\n", s);
+    printf("\nValor da soma: %.2f\n", r);
+    printf("\nValor da subtracao: %.2f\n", s);
     printf("\nValor da divisao: %.2f\n", d);
-    printf("\nValor da multiplicacao: %i\n", m);
+    printf("\nValor da multiplicacao: %.2f\n", m);
     
     system("pause");
 }
