@@ -1,23 +1,19 @@
 #include <iostream>
 
 float soma(float x, float y){
-    float a = x + y;
-    return a;
+    return x + y;
 }
 
 float subtracao(float x, float y){
-    float a = x - y;
-    return a;
+    return x - y;
 }
 
 double divi(double x, double y){
-    double a = x / y;
-    return (double) a;
+    return x / y;
 }
 
 float mult(float x, float y){
-    float a = x * y;
-    return a;
+    return x * y;
 }
 
 double lerNumeroInteiro(){
