@@ -19,11 +19,11 @@ int main() {
     int d;
     scanf("%i", &d);
     
-    if(a > b && a > c  && a > d){
+    if((a >= b) && (a >= c)  && (a >= d)){
         printf("\nO numero de A eh o maior numero, e o valor eh: %i\n\n", a);
-    } else if (b > a && b > c && b > d){
+    } else if ((b >= a) && (b >= c) && (b >= d)){
         printf("\nO numero de B eh o maior numero, e o valor eh: %i\n\n", b);
-    } else if (c > a && c > b && c > d){
+    } else if ((c >= a) && (c >= b) && (c >= d)){
         printf("\nO numero de C eh o maior numero, e o valor eh: %i\n\n", c);
     } else {
         printf("\nO numero de D eh o maior numero, e o valor eh: %i\n\n", d);
