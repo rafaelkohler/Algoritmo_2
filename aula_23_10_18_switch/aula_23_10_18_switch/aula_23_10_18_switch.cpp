@@ -1,9 +1,6 @@
 #include <iostream>
 
-
-
-int main() {
-    
+void imprimirMenu(){
     int opcao;
     printf("=======================\n");
     printf("== Escolha uma opcao ==\n");
@@ -27,4 +24,9 @@ int main() {
             printf("Opcao invalida!");
             break;
     }
+}
+
+int main() {
+    
+    imprimirMenu();
 }
