@@ -24,9 +24,6 @@ void apresentarRestoDiviComSwitch(){
         case 4:
             printf("Sobrou 4");
             break;
-            
-        default:
-            break;
     }
 }
 
