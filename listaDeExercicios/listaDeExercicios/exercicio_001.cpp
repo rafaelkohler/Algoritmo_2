@@ -35,6 +35,15 @@ int calculaIdade(int diasTotal){
     return result;
 }
 
+double calculaValorCarro (double x){
+    double imposto;
+    double distr;
+    double result;
+    distr = x * 0.28;
+    imposto = x * 0.45;
+    return result = x + distr + imposto;
+}
+
 int main(){
     
     printf("Exercicio_001\n");
@@ -82,5 +91,15 @@ int main(){
     double media = (((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/(2 + 3 + 5));
     
     printf("A sua media final eh: %.2lf\n\n\n", media);
+    
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_005\n");
+    printf("Favor informar o custo do veiculo: \n");
+    
+    double valor = lerNumeros();
+    double resultado = calculaValorCarro(valor);
+    
+    printf("O valor de fabrica do veiculo eh R$ %.2lf e o valor de venda ao consumidor eh R$ %.2lf\n\n\n", valor, resultado);
     
 }
