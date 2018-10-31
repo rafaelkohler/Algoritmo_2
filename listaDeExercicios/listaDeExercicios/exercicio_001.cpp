@@ -31,7 +31,7 @@ int calculaIdade(int diasTotal){
     anos = diasTotal /365;
     meses = (diasTotal - (anos *365)) /30;
     dias = diasTotal - ((anos * 365) + (meses * 30));
-    result = printf("Você tem, %i anos %i meses e %i dias", anos, meses, dias);
+    result = printf("Você tem, %i anos %i meses e %i dias\n\n\n", anos, meses, dias);
     return result;
 }
 
@@ -68,8 +68,19 @@ int main(){
     int diasTotal = lerNumerosInt();
     int resultadoDias = calculaIdade(diasTotal);
     
-    printf("Exercicio 03: ", resultadoDias);
+    printf("", resultadoDias);
     
     
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_004\n");
+    printf("Favor informar as suas 3 notas: \n");
+    
+    double nota1 = lerNumeros();
+    double nota2 = lerNumeros();
+    double nota3 = lerNumeros();
+    
+    double media = (((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/(2 + 3 + 5));
+    
+    printf("A sua media final eh: %.2lf\n\n\n", media);
     
 }
