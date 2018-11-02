@@ -357,7 +357,7 @@ void exercicio018(){
     int i, j, n;
 
     printf("----------------------------------------------------\n");
-    printf("\nExercicio_017\n");
+    printf("\nExercicio_018\n");
     printf("\nEntre com um valor de 2 a 20: ");
     printf("\nDigite um número\n");
     scanf("%d", &n);
@@ -377,8 +377,78 @@ void exercicio018(){
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio019(){
+    int l, c, mult, escolha, num, i, j;
+ 
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_019\n");
+    
+    printf("Digite a dimensao da matriz.\n");
+    scanf("%i %i", &l, &c);
+    
+    int a[l][c];
+    
+    printf("Digite os valores da matriz.");
+    for (i=0; i<l; i++){
+        printf("\nDigite os valores para a %i linha\n", i+1);
+        for (j=0; j<c; j++)
+            scanf("%i", &a[i][j]);
+    } printf("\n");
+    
+    printf("\nA matriz eh\n\n");
+    for (i=0; i<l; i++){
+        for (j=0; j<c; j++){
+            printf("\t%i", a[i][j]);
+        } printf("\n");
+    }
+    
+    printf("\nSe voce quer multiplicar uma linha DIGITE 1\nSe voce quer multiplicar uma coluna DIGITE 2.\n");
+    scanf("%i",&escolha);
+    if(escolha > 2 || escolha < 1)
+        printf("Entrada invalida\n");
+    else {
+        if (escolha == 1)   {
+            printf("\nDigite qual a LINHA que vai ser multiplicada\n");
+            scanf("%i",&mult);
+            
+            printf("\nDigite o VALOR pelo qual quer multiplicar\n");
+            scanf("%i",&num);
+            
+                for (i=0; i<c; i++) {
+                    a[mult-1][i] = num * a[mult-1][i];
+                }
+            
+            printf("\nA matriz multiplicada eh\n\n");
+            for (i=0; i<l; i++) {
+                for (j=0; j<c; j++) {
+                    printf("\t%i ", a[i][j]);
+                } printf("\n");
+            } printf("\n----------------------------------------------------\n\n\n");
+        }
+        
+        if (escolha == 2){
+            printf("\nDigite qual a COLUNA que vai ser multiplicada\n");
+            scanf("%i",&mult);
+            
+            printf("\nDigite o VALOR pelo qual quer multiplicar\n");
+            scanf("%i",&num);
+            
+            for (j=0; j<l; j++) {
+                a[j][mult-1] = num * a[j][mult-1];
+            }
+            
+            printf("\nA matriz multiplicada eh\n\n");
+            for (i=0; i<l; i++) {
+                for (j=0; j<c; j++) {
+                    printf("\t%i ", a[i][j]);
+                } printf("\n");
+            } printf("\n----------------------------------------------------\n\n\n");
+        }
+    }
+}
+
+
 int main(){
    
-    
     
 }
