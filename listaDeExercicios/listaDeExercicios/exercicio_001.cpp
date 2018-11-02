@@ -283,7 +283,20 @@ void exercicio011(){
     printf("----------------------------------------------------\n\n\n");
 }
 
-
+void exercicio012(){
+    double area, base, altura;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_012\n");
+    printf("\nFavor informar a BASE do triangulo: \n\n\t");
+    scanf("%lf", &base);
+    printf("\nFavor informar a ALTURA do triangulo: \n\n\t");
+    scanf("%lf", &altura);
+    
+    area = (base * altura) / 2;
+    printf("\nO triangulo de BASE %.2lf e ALTURA %.2lf tem a AREA de: %.2lf\n", base, altura, area);
+    printf("----------------------------------------------------\n\n\n");
+}
 
 int main(){
 
