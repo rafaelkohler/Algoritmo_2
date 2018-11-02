@@ -340,9 +340,35 @@ void exercicio015(){
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio016(){
+    char str[30];
+    int pos = 0;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_016\n");
+    
+    printf("\nFavor escrever uma palavra: ");
+    scanf("%s", str);
+    
+    printf("\n\nEscolha a posição da letra que você gostaria de ver: ");
+    scanf("%c", &str[pos]);
+    
+    printf("\nA letra da posição escolhida eh: %c\n", str[pos]);
+    printf("\n----------------------------------------------------\n\n\n");
+    
+}
+
+void exercicio017(){
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_017\n");
+    printf("\n       x\n      oxo\n     xxxxx\n    oxxxxxo\n   oxxxxxxxo\n  xxxxxxxxxxx\n oxxxxxxxxxxxo\noxxxxxxxxxxxxxxo\n      xxxx\n       xx\n       xx\n      xxxx\n");
+    printf("\n----------------------------------------------------\n\n\n");
+    
+}
 
 int main(){
    
-
+    exercicio016();
     
 }
