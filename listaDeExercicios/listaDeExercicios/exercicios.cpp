@@ -317,9 +317,18 @@ void exercicio013(){
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio014(){
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_014\n");
+    printf("\nXXXXX\nX   X\nX   X\nX   X\nXXXXX\n");
+    printf("\n----------------------------------------------------\n\n\n");
+    
+}
 
 
 int main(){
-    exercicio013();
+   
+  
     
 }
