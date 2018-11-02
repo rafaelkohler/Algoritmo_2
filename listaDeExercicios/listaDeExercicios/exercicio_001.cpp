@@ -141,21 +141,54 @@ void exercicio007(){
     scanf("%i", &a);
     printf("Favor informar o segundo numero: ");
     scanf("%i", &b);
-    if (a > b) {
-        if (a % b == 0) {
-            printf("\nA eh multiplo de B\n\n\n");
-        } else {
-            printf("\nA nao eh multiplo de B\n\n\n");
-        }
-    if (b > a) {
-        if (b % a == 0) {
-            printf("\nB eh multiplo de A\n\n\n");
-        } else {
-            printf("\nB nao eh multiplo de A\n\n\n");
+        if (a > b) {
+            if (a % b == 0) {
+                printf("\nA eh multiplo de B\n");
+                printf("----------------------------------------------------\n");
+            } else {
+                printf("\nA nao eh multiplo de B\n");
+                printf("----------------------------------------------------\n");
+            }
+        if (b > a) {
+            if (b % a == 0) {
+                printf("\nB eh multiplo de A\n");
+                printf("----------------------------------------------------\n");
+            } else {
+                printf("\nB nao eh multiplo de A\n");
+                printf("----------------------------------------------------\n");
+            }
         }
     }
 }
+
+void exercicio008(){
+    int idade;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_008\n");
+    printf("Favor informar a sua idade: \n");
+    scanf("%i", &idade);
+    
+    if (idade <5){
+        printf("\nA idade nao possui categoria\n");
+        printf("----------------------------------------------------\n");
+    } else if (idade >= 5 && idade <=7){
+        printf("\nVoce eh da categoria INFANTIL A\n");
+        printf("----------------------------------------------------\n");
+    } else if (idade >=8 && idade <=10){
+        printf("\nVoce eh da categoria INFANTIL B\n");
+        printf("----------------------------------------------------\n");
+    } else if (idade >=11 && idade <=13){
+        printf("\nVoce eh da categoria JUVENIL A\n");
+        printf("----------------------------------------------------\n");
+    } else if (idade >=14 && idade <=17){
+        printf("\nVoce eh da categoria JUVENIL B\n");
+        printf("----------------------------------------------------\n");
+    } else (idade >=18);
+        printf("\nVoce eh da categoria ADULTO\n");
+        printf("----------------------------------------------------\n");
 }
+
 
 int main(){
     
