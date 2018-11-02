@@ -480,7 +480,26 @@ void exercicio020(){
     }printf("\n----------------------------------------------------\n\n\n");
 }
 
-int main() {
+void exercicio021(){
+    int n, soma = 0;
     
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_021\n");
+    
+    printf("\nFavor informar uma quantidade de numeros: ");
+    scanf("%i", &n);
+    
+    for (int i=0; i<n; i++) {
+        if (n % 2 == 0){
+            soma += n;
+        }
+    }
+    printf("\nA soma dos numeros pares eh: %i\n", soma);
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
+
+int main() {
+    exercicio021();
     
 }
