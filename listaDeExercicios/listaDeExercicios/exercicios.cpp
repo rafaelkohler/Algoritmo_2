@@ -341,21 +341,7 @@ void exercicio015(){
 }
 
 void exercicio016(){
-    char str[30];
-    int pos = 0;
-    
-    printf("----------------------------------------------------\n");
-    printf("\nExercicio_016\n");
-    
-    printf("\nFavor escrever uma palavra: ");
-    scanf("%s", str);
-    
-    printf("\n\nEscolha a posição da letra que você gostaria de ver: ");
-    scanf("%c", &str[pos]);
-    
-    printf("\nA letra da posição escolhida eh: %c\n", str[pos]);
-    printf("\n----------------------------------------------------\n\n\n");
-    
+
 }
 
 void exercicio017(){
@@ -367,8 +353,32 @@ void exercicio017(){
     
 }
 
+void exercicio018(){
+    int i, j, n;
+
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_017\n");
+    printf("\nEntre com um valor de 2 a 20: ");
+    printf("\nDigite um número\n");
+    scanf("%d", &n);
+    
+    printf("\nSaida do programa: \n");
+    for (i=1; i<=n; i++) {
+        for (j=1; j<=i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
+    
+    for (i=i-2; i>0; i--) {
+        for (j=1; j<=i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
 int main(){
    
-    exercicio016();
+    
     
 }
