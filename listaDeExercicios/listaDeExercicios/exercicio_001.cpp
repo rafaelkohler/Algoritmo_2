@@ -15,109 +15,149 @@ int lerNumerosInt () {
     return a;
 }
 
-double calculaEx01 (double x1, double y1, double x2, double y2) {
-    double d;
-    d = sqrt(pow((x2 - x1), 2) + (pow((y2 - y1), 2)));
-    return d;
-}
-
 double exponencial (double x, double y) {
     double result;
     return result = pow((x + y), 2);
 }
-
-int calculaIdade(int diasTotal){
-    int result, anos, meses, dias;
-    anos = diasTotal /365;
-    meses = (diasTotal - (anos *365)) /30;
-    dias = diasTotal - ((anos * 365) + (meses * 30));
-    result = printf("Você tem, %i anos %i meses e %i dias\n\n\n", anos, meses, dias);
-    return result;
-}
-
-double calculaValorCarro (double x){
-    double imposto;
-    double distr;
-    double result;
-    distr = x * 0.28;
-    imposto = x * 0.45;
-    return result = x + distr + imposto;
-}
-
-int main(){
     
+void exercicio001 () {
+    double x1, y1, x2, y2, d;
+    
+    printf("----------------------------------------------------\n");
     printf("Exercicio_001\n");
-    double x1 = lerNumeros();
-    double y1 = lerNumeros();
-    double x2 = lerNumeros();
-    double y2 = lerNumeros();
-    
-    double result = calculaEx01(x1, y1, x2, y2);
-    printf("A distancia entre os dois pontos do exercicio 01 eh: %.2f\n\n\n", result);
-    
+    printf("Favor informar o primeiro numero: ");
+    scanf("%lf", &x1);
+    printf("Favor informar o segundo numero: ");
+    scanf("%lf", &y1);
+    printf("Favor informar o terceiro numero: ");
+    scanf("%lf", &x2);
+    printf("Favor informar o quarto numero: ");
+    scanf("%lf", &y2);
+        d = sqrt(pow((x2 - x1), 2) + (pow((y2 - y1), 2)));
+    printf("A distancia entre os dois pontos do exercicio 01 eh: %.2f\n", d);
+    printf("----------------------------------------------------\n");
+}
+
+void exercicio002(){
+    double a, b, c, r, s, result;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_002\n");
     printf("Favor informar 3 numeros inteiros positivos: \n");
-    double a = lerNumeros();
-    double b = lerNumeros();
-    double c = lerNumeros();
+    printf("Favor informar o primeiro numero: ");
+    scanf("%lf", &a);
+    printf("Favor informar o segundo numero: ");
+    scanf("%lf", &b);
+    printf("Favor informar o terceiro numero: ");
+    scanf("%lf", &c);
     
-    double r = exponencial(a, b);
-    double s = exponencial(b, c);
+    r = pow((a + b), 2);
+    s = pow((b + c), 2);
+    result = (r + s)/2;
     
-    double d = (r + s)/2;
-    printf("Valor do resultado do exercicio 02 eh: %.2f\n\n\n", d);
-    
+    printf("Valor do resultado do exercicio 02 eh: %.2f\n", result);
+    printf("----------------------------------------------------\n");
+}
+
+void exercicio003(){
+    int idadeDias, anos, meses, dias;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_003\n");
     printf("Favor informar a sua idade em dias: \n");
+    scanf("%i", &idadeDias);
     
-    int diasTotal = lerNumerosInt();
-    int resultadoDias = calculaIdade(diasTotal);
+    anos = idadeDias /365;
+    meses = (idadeDias - (anos *365)) /30;
+    dias = idadeDias - ((anos * 365) + (meses * 30));
     
-    printf("", resultadoDias);
-    
+    printf("Você tem, %i anos %i meses e %i dias\n", anos, meses, dias);
+    printf("----------------------------------------------------\n");
+}
+
+void exercico004(){
+    double nota1, nota2, nota3, media;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_004\n");
-    printf("Favor informar as suas 3 notas: \n");
+    printf("Favor informar as suas 3 notas: ");
+    printf("\nNota1: ");
+    scanf("%lf", &nota1);
+    printf("\nNota2: ");
+    scanf("%lf", &nota2);
+    printf("\nNota3: ");
+    scanf("%lf", &nota3);
     
-    double nota1 = lerNumeros();
-    double nota2 = lerNumeros();
-    double nota3 = lerNumeros();
+    media = (((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/(2 + 3 + 5));
     
-    double media = (((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/(2 + 3 + 5));
-    
-    printf("A sua media final eh: %.2lf\n\n\n", media);
-    
+    printf("A sua media final eh: %.2lf\n", media);
+    printf("----------------------------------------------------\n");
+
+}
+
+void exercicio005(){
+    double valor, imposto, distr, result;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_005\n");
     printf("Favor informar o custo do veiculo: \n");
+    scanf("%lf", &valor);
     
-    double valor = lerNumeros();
-    double resultado = calculaValorCarro(valor);
+    distr = valor * 0.28;
+    imposto = valor * 0.45;
+    result = valor + distr + imposto;
     
-    printf("O valor de fabrica do veiculo eh R$ %.2lf e o valor de venda ao consumidor eh R$ %.2lf\n\n\n", valor, resultado);
+    printf("O valor de fabrica do veiculo eh R$ %.2lf e o valor de venda ao consumidor eh R$ %.2lf\n", valor, result);
+    printf("----------------------------------------------------\n");
     
+}
+
+void exercicio006(){
+    int n, i, soma;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_006\n");
-    int n, i, soma;
-    
     printf("\n\tCalculo da soma dos n primeiros inteiros positivos\n");
     
     printf("\nDigite o valor de n: ");
     scanf("%d", &n);
     soma = 0;
     i = 1;
-
+    
     while (i <= n) {
         soma = soma + i;
         i = i + 1;
     }
     printf("A soma dos %d primeiros inteiros positivos eh: %d\n", n, soma);
+    printf("----------------------------------------------------\n");
+}
 
+void exercicio007(){
+    int a, b;
+   
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_007\n");
+    printf("Favor informar o primeiro numero: ");
+    scanf("%i", &a);
+    printf("Favor informar o segundo numero: ");
+    scanf("%i", &b);
+    if (a > b) {
+        if (a % b == 0) {
+            printf("\nA eh multiplo de B\n\n\n");
+        } else {
+            printf("\nA nao eh multiplo de B\n\n\n");
+        }
+    if (b > a) {
+        if (b % a == 0) {
+            printf("\nB eh multiplo de A\n\n\n");
+        } else {
+            printf("\nB nao eh multiplo de A\n\n\n");
+        }
+    }
+}
+}
+
+int main(){
+    
+    
 }
