@@ -189,8 +189,45 @@ void exercicio008(){
         printf("----------------------------------------------------\n");
 }
 
+void exercicio009(){
+    double nota1, nota2, nota3, media;
+    int operacao;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_009\n");
+    printf("Favor informar as suas 3 notas: ");
+    printf("\nNota1: ");
+    scanf("%lf", &nota1);
+    printf("Nota2: ");
+    scanf("%lf", &nota2);
+    printf("Nota3: ");
+    scanf("%lf", &nota3);
+    printf("\nEscolha o tipo de media que voce deseja calcular:\n  1. para aritmetica\n  2. para ponderada\n  3. para harmonica \n\n\t");
+    scanf("%i", &operacao);
+    
+    switch (operacao) {
+        case 1:
+            media = (nota1 + nota2 + nota3)/3;
+            printf("\n\nA media aritmetica eh: %.2lf\n\n", media);
+            printf("----------------------------------------------------\n");
+            break;
+        case 2:
+            media = ((nota1*3) + (nota2*3) + (nota3*4))/10;
+            printf("\n\nA media ponderada eh: %.2lf\n\n", media);
+            printf("----------------------------------------------------\n");
+            break;
+        case 3:
+            media = (3/((1/nota1)+(1/nota2)+(1/nota3)));
+            printf("\n\nA media harmonica eh: %.2lf\n\n", media);
+            printf("----------------------------------------------------\n");
+            break;
+    }
+}
+
+
 
 int main(){
-    
+
+   
     
 }
