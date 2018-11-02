@@ -269,8 +269,24 @@ void exercicio010(){
     }
 }
 
+void exercicio011(){
+    double area, raio;
+    double pi = 3.14159;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_011\n");
+    printf("Favor informar o raio da circunferencia: \n\n\t");
+    scanf("%lf", &raio);
+    
+    area = pi * (pow(raio, 2));
+    printf("\nO resultado da AREA da circunferencia de raio %.2lf eh: %.2lf\n", raio, area);
+    printf("----------------------------------------------------\n\n\n");
+}
+
+
+
 int main(){
 
-    exercicio010();
+
     
 }
