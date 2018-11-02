@@ -102,4 +102,22 @@ int main(){
     
     printf("O valor de fabrica do veiculo eh R$ %.2lf e o valor de venda ao consumidor eh R$ %.2lf\n\n\n", valor, resultado);
     
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_006\n");
+    int n, i, soma;
+    
+    printf("\n\tCalculo da soma dos n primeiros inteiros positivos\n");
+    
+    printf("\nDigite o valor de n: ");
+    scanf("%d", &n);
+    soma = 0;
+    i = 1;
+
+    while (i <= n) {
+        soma = soma + i;
+        i = i + 1;
+    }
+    printf("A soma dos %d primeiros inteiros positivos eh: %d\n", n, soma);
+
 }
