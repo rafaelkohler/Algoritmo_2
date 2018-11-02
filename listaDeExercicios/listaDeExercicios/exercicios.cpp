@@ -331,7 +331,7 @@ void exercicio015(){
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_015\n");
-    printf("\nFavor informar o primeiro x: ");
+    printf("\nFavor informar o primeiro numero x: ");
     scanf("%i", &x);
     printf("Favor informar o a potencia que o numero x sera elevado: ");
     scanf("%i", &n);
@@ -383,19 +383,19 @@ void exercicio019(){
     printf("----------------------------------------------------\n");
     printf("\nExercicio_019\n");
     
-    printf("Digite a dimensao da matriz.\n");
+    printf("Digite o tamanho da matriz.\n");
     scanf("%i %i", &l, &c);
     
     int a[l][c];
     
     printf("Digite os valores da matriz.");
     for (i=0; i<l; i++){
-        printf("\nDigite os valores para a %i linha\n", i+1);
+        printf("\nDigite os valores para a linha %i\n", i+1);
         for (j=0; j<c; j++)
             scanf("%i", &a[i][j]);
     } printf("\n");
     
-    printf("\nA matriz eh\n\n");
+    printf("\nA matriz eh: \n\n");
     for (i=0; i<l; i++){
         for (j=0; j<c; j++){
             printf("\t%i", a[i][j]);
@@ -447,8 +447,40 @@ void exercicio019(){
     }
 }
 
+void exercicio020(){
+    int l, c, i, j;
+    int a[3][3];
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_020\n");
 
-int main(){
-   
+    printf("Digite os valores da matriz.");
+    for (i=0; i<3; i++){
+        printf("\nDigite os valores para a linha %i\n", i+1);
+        for (j=0; j<3; j++)
+            scanf("%i", &a[i][j]);
+    } printf("\n");
+    
+    printf("\nA matriz eh: \n\n");
+    for (i=0; i<3; i++) {
+        for(j=0; j<3; j++){
+            printf("\t%i", a[i][j]);
+        } printf("\n");
+    } printf("\n----------------------------------------------------\n");
+ 
+    printf("Troca dos números negativos pelo seu módulo:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            if(a[i][j]<0) {
+                printf("%i, ", -(a[i][j]));
+            } else {
+                printf("%i, ",a[i][j]);
+            }
+        }
+    }printf("\n----------------------------------------------------\n\n\n");
+}
+
+int main() {
+    
     
 }
