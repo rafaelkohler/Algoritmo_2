@@ -326,9 +326,22 @@ void exercicio014(){
     
 }
 
+void exercicio015(){
+    int x, n, result;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_015\n");
+    printf("\nFavor informar o primeiro x: ");
+    scanf("%i", &x);
+    printf("\nFavor informar o a potencia que o numero x sera elevado: ");
+    scanf("%i", &n);
+    result = pow(x, n);
+    printf("\nO resultado de %i elevado a %i eh: ", x, n, result);
+}
+
 
 int main(){
    
-  
+    exercicio015();
     
 }
