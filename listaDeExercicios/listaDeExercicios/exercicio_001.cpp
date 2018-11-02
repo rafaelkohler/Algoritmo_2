@@ -35,7 +35,7 @@ void exercicio001 () {
     scanf("%lf", &y2);
         d = sqrt(pow((x2 - x1), 2) + (pow((y2 - y1), 2)));
     printf("A distancia entre os dois pontos do exercicio 01 eh: %.2f\n", d);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
 }
 
 void exercicio002(){
@@ -56,7 +56,7 @@ void exercicio002(){
     result = (r + s)/2;
     
     printf("Valor do resultado do exercicio 02 eh: %.2f\n", result);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
 }
 
 void exercicio003(){
@@ -72,10 +72,10 @@ void exercicio003(){
     dias = idadeDias - ((anos * 365) + (meses * 30));
     
     printf("Você tem, %i anos %i meses e %i dias\n", anos, meses, dias);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
 }
 
-void exercico004(){
+void exercicio004(){
     double nota1, nota2, nota3, media;
     
     printf("----------------------------------------------------\n");
@@ -91,7 +91,7 @@ void exercico004(){
     media = (((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/(2 + 3 + 5));
     
     printf("A sua media final eh: %.2lf\n", media);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
 
 }
 
@@ -108,7 +108,7 @@ void exercicio005(){
     result = valor + distr + imposto;
     
     printf("O valor de fabrica do veiculo eh R$ %.2lf e o valor de venda ao consumidor eh R$ %.2lf\n", valor, result);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
     
 }
 
@@ -129,7 +129,7 @@ void exercicio006(){
         i = i + 1;
     }
     printf("A soma dos %d primeiros inteiros positivos eh: %d\n", n, soma);
-    printf("----------------------------------------------------\n");
+    printf("----------------------------------------------------\n\n\n");
 }
 
 void exercicio007(){
@@ -144,18 +144,18 @@ void exercicio007(){
         if (a > b) {
             if (a % b == 0) {
                 printf("\nA eh multiplo de B\n");
-                printf("----------------------------------------------------\n");
+                printf("----------------------------------------------------\n\n\n");
             } else {
                 printf("\nA nao eh multiplo de B\n");
-                printf("----------------------------------------------------\n");
+                printf("----------------------------------------------------\n\n\n");
             }
         if (b > a) {
             if (b % a == 0) {
                 printf("\nB eh multiplo de A\n");
-                printf("----------------------------------------------------\n");
+                printf("----------------------------------------------------\n\n\n");
             } else {
                 printf("\nB nao eh multiplo de A\n");
-                printf("----------------------------------------------------\n");
+                printf("----------------------------------------------------\n\n\n");
             }
         }
     }
@@ -171,22 +171,22 @@ void exercicio008(){
     
     if (idade <5){
         printf("\nA idade nao possui categoria\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
     } else if (idade >= 5 && idade <=7){
         printf("\nVoce eh da categoria INFANTIL A\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
     } else if (idade >=8 && idade <=10){
         printf("\nVoce eh da categoria INFANTIL B\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
     } else if (idade >=11 && idade <=13){
         printf("\nVoce eh da categoria JUVENIL A\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
     } else if (idade >=14 && idade <=17){
         printf("\nVoce eh da categoria JUVENIL B\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
     } else (idade >=18);
         printf("\nVoce eh da categoria ADULTO\n");
-        printf("----------------------------------------------------\n");
+        printf("----------------------------------------------------\n\n\n");
 }
 
 void exercicio009(){
@@ -209,25 +209,68 @@ void exercicio009(){
         case 1:
             media = (nota1 + nota2 + nota3)/3;
             printf("\n\nA media aritmetica eh: %.2lf\n\n", media);
-            printf("----------------------------------------------------\n");
+            printf("----------------------------------------------------\n\n\n");
             break;
         case 2:
             media = ((nota1*3) + (nota2*3) + (nota3*4))/10;
             printf("\n\nA media ponderada eh: %.2lf\n\n", media);
-            printf("----------------------------------------------------\n");
+            printf("----------------------------------------------------\n\n\n");
             break;
         case 3:
             media = (3/((1/nota1)+(1/nota2)+(1/nota3)));
             printf("\n\nA media harmonica eh: %.2lf\n\n", media);
-            printf("----------------------------------------------------\n");
+            printf("----------------------------------------------------\n\n\n");
             break;
     }
 }
 
+void exercicio010(){
+    double precoTotal, quant;
+    int codigo;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_010\n");
+    printf("Favor informar a quantidade de produtos comprados: \n");
+    scanf("%lf", &quant);
+    printf("\nFavor informar o codigo do produto:\n 1001 Maca\n 1324 Uva\n 6548 Banana\n 1987 Pera\n 7623 Manga \n\n\t");
+    scanf("%i", &codigo);
+    
+    switch (codigo) {
 
+        case 1001:
+            precoTotal = quant * 5.32;
+            printf("\nO preco a pagar por %.2lf Kg de Maca eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+
+        case 1324:
+            precoTotal = quant * 6.45;
+            printf("\nO preco a pagar por %.2lf Kg de Uva eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+
+        case 6548:
+            precoTotal = quant * 2.37;
+            printf("\nO preco a pagar por %.2lf Kg de Banana eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+
+        case 1987:
+            precoTotal = quant * 5.32;
+            printf("\nO preco a pagar por %.2lf Kg de Pera eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+        
+        case 7603:
+            precoTotal = quant * 6.45;
+            printf("\nO preco a pagar por %.2lf Kg de Manga eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+    }
+}
 
 int main(){
 
-   
+    exercicio010();
     
 }
