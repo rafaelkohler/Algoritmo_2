@@ -309,14 +309,17 @@ void exercicio013(){
     scanf("%i", &n);
   
     printf("\nOs numeros impares sao: ");
-    for (i=0; i<n; i++) {
+    printf("%i", impares);
+    for (i=1; i<n; i++) {
         impares = impares +2;
         printf("%i", impares);
     }
+    printf("\n----------------------------------------------------\n\n\n");
 }
 
 
 
 int main(){
+    exercicio013();
     
 }
