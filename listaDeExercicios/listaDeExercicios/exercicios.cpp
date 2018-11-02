@@ -298,8 +298,25 @@ void exercicio012(){
     printf("----------------------------------------------------\n\n\n");
 }
 
+void exercicio013(){
+    int i, n;
+    int impares = 1;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_013\n");
+    printf("\nDado um número inteiro positivo n, imprimir os n primeiros naturais ímpares.");
+    printf("\nFavor informar um numero: ");
+    scanf("%i", &n);
+  
+    printf("\nOs numeros impares sao: ");
+    for (i=0; i<n; i++) {
+        impares = impares +2;
+        printf("%i", impares);
+    }
+}
+
+
+
 int main(){
-
-
     
 }
