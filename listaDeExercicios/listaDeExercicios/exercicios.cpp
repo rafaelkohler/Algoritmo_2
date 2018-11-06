@@ -481,7 +481,7 @@ void exercicio020(){
 }
 
 void exercicio021(){
-    int n, soma = 0;
+    int n, i, soma = 0;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_021\n");
@@ -489,17 +489,24 @@ void exercicio021(){
     printf("\nFavor informar uma quantidade de numeros: ");
     scanf("%i", &n);
     
-    for (int i=0; i<n; i++) {
-        if (n % 2 == 0){
-            soma += n;
+ 
+    for (i = 1; i <=n; i++) {
+        if(i%2 == 0) {
+            soma += i;
         }
     }
+    
     printf("\nA soma dos numeros pares eh: %i\n", soma);
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio022(){
+    int iMatriz[3][3];
+    
+}
+
 
 int main() {
-    exercicio021();
+   
     
 }
