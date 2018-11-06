@@ -448,7 +448,7 @@ void exercicio019(){
 }
 
 void exercicio020(){
-    int l, c, i, j;
+    int i, j;
     int a[3][3];
     
     printf("----------------------------------------------------\n");
@@ -501,12 +501,35 @@ void exercicio021(){
 }
 
 void exercicio022(){
-    int iMatriz[3][3];
+    int iMatriz[3][3], i= 0, j=0;
     
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_022\n");
+    
+    printf("Digite os valores da matriz.");
+    for(i=0; i<3; i++){
+        printf("\nDigite os valores da linha %i\n", i+1);
+        for(j=0; j<3; j++){
+            scanf("%i", &iMatriz[i][j]);
+        } printf("\n");
+    }
+    printf("\nA matriz eh: \n\n");
+    for (i=0; i<3; i++) {
+        for(j=0; j<3; j++){
+            printf("\t%i", iMatriz[i][j]);
+        } printf("\n");
+    } printf("\n----------------------------------------------------\n");
+    
+    printf("\nA matriz transposta eh: \n\n");
+    for (i=0; i<3; i++){
+        for (j=0; j<3; j++){
+            printf("\t%i", iMatriz[j][i]);
+        }printf("\n");
+    }printf("\n----------------------------------------------------\n\n\n");
 }
 
 
 int main() {
    
-    
+    exercicio022();
 }
