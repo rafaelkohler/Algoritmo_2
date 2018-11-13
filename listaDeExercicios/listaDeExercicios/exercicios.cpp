@@ -528,8 +528,27 @@ void exercicio022(){
     }printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio023(){
+    double litrosUsados, tempo, velMedia, distancia, tempoConvertido;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_023\n");
+    
+    printf("\nFavor informar o tempo da sua viagem em minutos: ");
+    scanf("%lf", &tempo);
+    printf("\nFavor informar a velocidade media: ");
+    scanf("%lf", &velMedia);
+    tempoConvertido = tempo/60;
+    distancia = tempoConvertido * velMedia;
+    litrosUsados = distancia/12;
+    
+    printf("\nA velocidade media da viagem foi de %.2lf km/h, levou %.2lf min, a distancia percorrida foi de %.2lf Km e a quantidade de combustivel utilizada na viagem foi de %.2lf litros.\n", velMedia, tempo, distancia, litrosUsados);
+    printf("\n----------------------------------------------------\n\n\n");
+    
+}
 
 int main() {
-   
-    exercicio022();
+
+    
+
 }
