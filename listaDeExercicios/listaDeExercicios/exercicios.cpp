@@ -341,7 +341,13 @@ void exercicio015(){
 }
 
 void exercicio016(){
-
+    char vetor[20];
+    int n;
+    
+    printf("\nDigite uma palavra ");
+    gets(vetor);
+    printf("\nDigite um valor para saber qual o caracter desta posição %s ", vetor);
+    getchar();
 }
 
 void exercicio017(){
@@ -549,6 +555,6 @@ void exercicio023(){
 
 int main() {
 
-    
+    exercicio016();
 
 }
