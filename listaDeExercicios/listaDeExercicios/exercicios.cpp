@@ -553,8 +553,30 @@ void exercicio023(){
     
 }
 
+void exercicio024(){
+    int a, b, c;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_024\n");
+    
+    printf("Digite o primeiro valor para A: ");
+    scanf("%i", &a);
+    printf("\nDigite o segundo valor para B: ");
+    scanf("%i", &b);
+    
+    printf("\n\nOs valores para A e B sao respectivamente: %i e %i", a, b);
+    
+    c = a;
+    a = b;
+    b = c;
+    
+    printf("\n\nOs valores TROCADOS para A e B sao respectivamente: %i e %i\n\n", a, b);
+     printf("\n----------------------------------------------------\n\n\n");
+
+}
+
 int main() {
 
-    exercicio016();
+
 
 }
