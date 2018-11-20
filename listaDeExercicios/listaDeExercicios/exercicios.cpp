@@ -591,8 +591,23 @@ void exercicio025(){
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio026() {
+    int idade, idadeDias;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_026\n");
+    
+    printf("Favor informar a sua idade: ");
+    scanf("%i", &idade);
+    
+    idadeDias = idade * 12 * 30;
+    
+    printf("\nVoce viveu %i dias.", idadeDias);
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
 int main() {
 
-   
+    
 
 }
