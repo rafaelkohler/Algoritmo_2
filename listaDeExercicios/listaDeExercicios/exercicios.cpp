@@ -571,12 +571,28 @@ void exercicio024(){
     b = c;
     
     printf("\n\nOs valores TROCADOS para A e B sao respectivamente: %i e %i\n\n", a, b);
-     printf("\n----------------------------------------------------\n\n\n");
+    printf("\n----------------------------------------------------\n\n\n");
 
+}
+
+void exercicio025(){
+    float salarioBruto, salarioLiquido;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_025\n");
+    
+    printf("Favor informar o seu salario: ");
+    scanf("%f", &salarioBruto);
+    
+    float parcial = salarioBruto * 0.9;
+    salarioLiquido = parcial * 0.95;
+    
+    printf("\nO salario liquido apos as deducoes de impostos eh: %.2f", salarioLiquido);
+    printf("\n----------------------------------------------------\n\n\n");
 }
 
 int main() {
 
-
+   
 
 }
