@@ -606,8 +606,25 @@ void exercicio026() {
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio027() {
+    int valor, cem, dezena, unidade;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_027\n");
+    
+    printf("Qual o valor da sua compra? ");
+    scanf("%i", &valor);
+    
+    cem = valor%100;
+    dezena = valor%10;
+    unidade = valor%2;
+    
+    printf("\n%i %i %i\n\n", cem, dezena, unidade);
+    
+}
+
 int main() {
 
-    
+    exercicio027();
 
 }
