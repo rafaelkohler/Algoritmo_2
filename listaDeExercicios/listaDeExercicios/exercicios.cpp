@@ -341,13 +341,20 @@ void exercicio015(){
 }
 
 void exercicio016(){
-    char vetor[20];
+    char vetor[50], i;
     int n;
     
     printf("\nDigite uma palavra ");
     gets(vetor);
-    printf("\nDigite um valor para saber qual o caracter desta posição %s ", vetor);
-    getchar();
+    printf("\nDigite um caracter para saber qual a posição dele. ");
+    i = getchar();
+    for (n=0; n<50; n++){
+        if(vetor[n] == i) {
+            printf("\nO reusultado é %i", n);
+            printf("\n");
+        }
+    }
+    printf("\n----------------------------------------------------\n\n\n");
 }
 
 void exercicio017(){
@@ -625,6 +632,6 @@ void exercicio027() {
 
 int main() {
 
-    exercicio027();
+    exercicio016();
 
 }
