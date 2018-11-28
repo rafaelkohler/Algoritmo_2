@@ -614,24 +614,34 @@ void exercicio026() {
 }
 
 void exercicio027() {
-    int valor, cem, dezena, unidade;
+    int valor, valorPago, troco, cem, dezena, unidade, cemNum, dezenaNum, unidadeNum;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_027\n");
     
     printf("Qual o valor da sua compra? ");
     scanf("%i", &valor);
+    printf("Qual o valor pago? ");
+    scanf("%i", &valorPago);
     
-    cem = valor%100;
-    dezena = valor%10;
-    unidade = valor%2;
+    troco = valorPago - valor;
     
-    printf("\n%i %i %i\n\n", cem, dezena, unidade);
+    cem = troco % 100;
+    cemNum = troco / 100;
+    dezena = cem % 10;
+    dezenaNum = cem / 10;
+    unidade = cem % 1;
+    unidadeNum = dezena / 1;
+
+    printf("\nO valor da compra foi R$ %i e o valor do troco eh de R$ %i.", valor, troco);
+    printf("\nO número mínimo de notas que o caixa deve fornecer como troco sao: %i notas.", cemNum+dezenaNum+unidadeNum);
+    printf("\nA quantidade de cada tipo de nota do troco eh: %i notas de CEM reais, %i notas de DEZ reais e %i notas de UM real.", cemNum, dezenaNum, unidadeNum);
+     printf("\n----------------------------------------------------\n\n\n");
     
 }
 
 int main() {
 
-    exercicio016();
+    
 
 }
