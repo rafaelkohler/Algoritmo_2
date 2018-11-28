@@ -717,7 +717,7 @@ void exercicio030() {
 }
 
 void exercicio031() {
-    int vet[5], a, i;
+    int vet[5], a = 0, i;
     
     printf("----------------------------------------------------\n");
     printf("\nExercicio_031\n");
@@ -732,8 +732,60 @@ void exercicio031() {
     printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio032() {
+    double mediaSalario, somaSalario = 0, percent;
+    int n, numFilhos, i, somaFilhos = 0, mediaFilhos;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_032\n");
+    
+    printf("Quantas pessoas serao entrevistadas? ");
+    scanf("%i", &n);
+    
+    double salario[n];
+    
+    for (i=0; i<n; i++) {
+        printf("Informe o valor do salario da pessoa %i: ", i+1);
+        scanf("%lf", &salario[i]);
+        somaSalario += salario[i];
+        mediaSalario = somaSalario / n;
+    }
+    for (i=0; i<n; i++) {
+        printf("Informe a quantidade de filhos da pessoa %i ", i+1);
+        printf("%i", &numFilhos);
+        somaFilhos += numFilhos + 1;
+        mediaFilhos = somaFilhos / n;
+    }
+    printf("\nA media do salario da populacao eh de R$ %.2lf", mediaSalario);
+    printf("\nA media do numero de filhos eh %i", mediaFilhos);
+
+}
+
+void exercicio033() {
+    double alturaChico = 1.50, alturaZe = 1.10;
+    int ano;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_033\n");
+    
+    ano = 0;
+    
+    do {
+        alturaZe = alturaZe + 0.03;
+        alturaChico = alturaChico + 0.02;
+        ano = ano + 1;
+        
+    } while (alturaChico >= alturaZe);
+    
+    printf("\n%d anos deverao ser necessarios para que Ze seja maior que Chico." , ano);
+    printf("\n%.2lf metros sera a altura de Ze daqui a %i anos", alturaZe, ano);
+    printf("\n%.2lf metros sera a altura de Chico daqui a %i anos", alturaChico, ano);
+    
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
 int main() {
 
-
+    exercicio033();
 
 }
