@@ -661,9 +661,38 @@ void exercicio028() {
     
 }
 
+void exercicio029() {
+    double x, y, z;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_029\n");
+    
+    printf("Informe a primeira medida para um triangulo: ");
+    scanf("%lf", &x);
+    printf("Informe a segunda medida para um triangulo: ");
+    scanf("%lf", &y);
+    printf("Informe a terceira medida para um triangulo: ");
+    scanf("%lf", &z);
+    
+    if((x<y+z) && (y<x+z) && (z<x+y)){
+        printf("\nEstas medidas formam um triangulo.\n\n");
+    }
+    
+    if(x == y && x == z && y == z){
+        printf("\nEste eh um triangulo EQUILATERO");
+    } else if (x == y || y == z || x == z) {
+        printf("\nEste eh um triangulo ISOSCELES");
+    } else if (x != y && x != z && y != z) {
+        printf("\nEste eh um tringulo ESCALENO");
+    } else {
+        printf("\nEstas medidas nao formam um triangulo");
+    }
+     printf("\n----------------------------------------------------\n\n\n");
+}
+
 
 int main() {
 
-    
+
 
 }
