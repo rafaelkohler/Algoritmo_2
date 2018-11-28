@@ -640,6 +640,28 @@ void exercicio027() {
     
 }
 
+void exercicio028() {
+    double salMin, salTotal, comissao = 50, quantCarroVendido, valorCarro, valorVenda;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_028\n");
+    
+    printf("Informe o valor do salario minimo: R$ ");
+    scanf("%lf", &salMin);
+    printf("Quantos carros este vendedor vendeu? ");
+    scanf("%lf", &quantCarroVendido);
+    printf("Qual o valor de venda do carro? ");
+    scanf("%lf", &valorCarro);
+    
+    valorVenda = quantCarroVendido * valorCarro;
+    salTotal = (salMin * 2) + (comissao * quantCarroVendido) + (valorVenda * 0.05);
+    
+    printf("\nO salario total do vendedor sera de: R$ %.2lf", salTotal);
+    printf("\n----------------------------------------------------\n\n\n");
+    
+}
+
+
 int main() {
 
     
