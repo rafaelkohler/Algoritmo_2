@@ -690,6 +690,47 @@ void exercicio029() {
      printf("\n----------------------------------------------------\n\n\n");
 }
 
+void exercicio030() {
+    int n, i, j, x;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_030\n");
+    
+    printf("\nFavor digitar um numero inteiro de 2 a 20: ");
+    scanf("%i", &n);
+    
+    for (i=1; i<=n; i++) {
+        printf("%i", i);
+    } printf("\n");
+    
+    for(i=1; i<n; i++){
+        x = 0;
+        for(j=0; j<n; j++){
+            if(j < i) {
+                printf("x");
+            } else
+                printf("%i", x);
+                x = x + 1;
+            
+        } printf("\n");
+    }
+}
+
+void exercicio031() {
+    int vet[5], a, i;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_031\n");
+    
+    for (i=0; i<5; i++) {
+        printf("Informe um numero: ");
+        scanf("%i", &vet[i]);
+        if (vet[i] < 0) {
+            a += 1;
+        }
+    } printf("\nA quantidade de numeros negativos eh: %i", a);
+    printf("\n----------------------------------------------------\n\n\n");
+}
 
 int main() {
 
