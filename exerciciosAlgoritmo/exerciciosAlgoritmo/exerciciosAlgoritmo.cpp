@@ -707,14 +707,14 @@ void exercicio030() {
     } printf("\n");
     
     for(i=1; i<n; i++){
-        x = 0;
+        x = 1;
         for(j=0; j<n; j++){
             if(j < i) {
                 printf("x");
-            } else
+            } else {
                 printf("%i", x);
-            x = x + 1;
-            
+                x = x + 1;
+            }
         } printf("\n");
     }
 }
@@ -736,8 +736,18 @@ void exercicio031() {
 }
 
 void exercicio032() {
-    double mediaSalario, somaSalario = 0, percent;
-    int n, numFilhos, i, somaFilhos = 0, mediaFilhos;
+    double mediaSalario, somaSalario, percent, mediaFilhos, somaFilhos, maior, menor, salarioMenor, countSal;
+    int n, numFilhos, i;
+    
+    mediaSalario = 0;
+    somaSalario = 0;
+    percent = 0;
+    mediaFilhos = 0;
+    somaFilhos = 0;
+    maior = 0;
+    menor = 0;
+    salarioMenor = 0;
+    countSal = 0;
     
     printf("\n----------------------------------------------------\n");
     printf("\nExercicio_032\n");
@@ -751,17 +761,33 @@ void exercicio032() {
         printf("Informe o valor do salario da pessoa %i: ", i+1);
         scanf("%lf", &salario[i]);
         somaSalario += salario[i];
+        countSal += 1;
         mediaSalario = somaSalario / n;
     }
     for (i=0; i<n; i++) {
         printf("Informe a quantidade de filhos da pessoa %i ", i+1);
-        printf("%i", &numFilhos);
+        scanf("%i", &numFilhos);
         somaFilhos += numFilhos + 1;
-        mediaFilhos = somaFilhos / n;
+        mediaFilhos = somaFilhos / n-1;
     }
+    for (i=0; i<n; i++) {
+        if (salario[i] > maior) {
+            maior = salario[i];
+        } else {
+            menor = salario[i];
+        }
+    }
+    for (i=0; i<n; i++) {
+        if (salario[i] <= 100) {
+            salarioMenor += 1;
+        }
+        percent = (salarioMenor*100)/countSal;
+    }
+
     printf("\nA media do salario da populacao eh de R$ %.2lf", mediaSalario);
-    printf("\nA media do numero de filhos eh %i", mediaFilhos);
-    
+    printf("\nA media do numero de filhos eh %.2lf", mediaFilhos);
+    printf("\nO maior salário eh R$ %.2lf", maior);
+    printf("\nO percentual de salários menor de R$ 100,00 é de %.2lf%%.\n", percent);
 }
 
 void exercicio033() {
