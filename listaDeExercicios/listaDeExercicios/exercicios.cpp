@@ -23,7 +23,7 @@ double exponencial (double x, double y) {
 void exercicio001 () {
     double x1, y1, x2, y2, d;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("Exercicio_001\n");
     printf("Favor informar o primeiro numero: ");
     scanf("%lf", &x1);
@@ -41,7 +41,7 @@ void exercicio001 () {
 void exercicio002(){
     double a, b, c, r, s, result;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_002\n");
     printf("Favor informar 3 numeros inteiros positivos: \n");
     printf("Favor informar o primeiro numero: ");
@@ -62,7 +62,7 @@ void exercicio002(){
 void exercicio003(){
     int idadeDias, anos, meses, dias;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_003\n");
     printf("Favor informar a sua idade em dias: \n");
     scanf("%i", &idadeDias);
@@ -78,7 +78,7 @@ void exercicio003(){
 void exercicio004(){
     double nota1, nota2, nota3, media;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_004\n");
     printf("Favor informar as suas 3 notas: ");
     printf("\nNota1: ");
@@ -98,7 +98,7 @@ void exercicio004(){
 void exercicio005(){
     double valor, imposto, distr, result;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_005\n");
     printf("Favor informar o custo do veiculo: \n");
     scanf("%lf", &valor);
@@ -115,7 +115,7 @@ void exercicio005(){
 void exercicio006(){
     int n, i, soma;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_006\n");
     printf("\n\tCalculo da soma dos n primeiros inteiros positivos\n");
     
@@ -135,7 +135,7 @@ void exercicio006(){
 void exercicio007(){
     int a, b;
    
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_007\n");
     printf("Favor informar o primeiro numero: ");
     scanf("%i", &a);
@@ -164,7 +164,7 @@ void exercicio007(){
 void exercicio008(){
     int idade;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_008\n");
     printf("Favor informar a sua idade: \n");
     scanf("%i", &idade);
@@ -193,7 +193,7 @@ void exercicio009(){
     double nota1, nota2, nota3, media;
     int operacao;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_009\n");
     printf("Favor informar as suas 3 notas: ");
     printf("\nNota1: ");
@@ -228,7 +228,7 @@ void exercicio010(){
     double precoTotal, quant;
     int codigo;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_010\n");
     printf("Favor informar a quantidade de produtos comprados: \n");
     scanf("%lf", &quant);
@@ -273,7 +273,7 @@ void exercicio011(){
     double area, raio;
     double pi = 3.14159;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_011\n");
     printf("Favor informar o raio da circunferencia: \n\n\t");
     scanf("%lf", &raio);
@@ -286,7 +286,7 @@ void exercicio011(){
 void exercicio012(){
     double area, base, altura;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_012\n");
     printf("\nFavor informar a BASE do triangulo: \n\n\t");
     scanf("%lf", &base);
@@ -302,7 +302,7 @@ void exercicio013(){
     int i, n;
     int impares = 1;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_013\n");
     printf("\nDado um número inteiro positivo n, imprimir os n primeiros naturais ímpares.");
     printf("\nFavor informar um numero: ");
@@ -319,7 +319,7 @@ void exercicio013(){
 
 void exercicio014(){
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_014\n");
     printf("\nXXXXX\nX   X\nX   X\nX   X\nXXXXX\n");
     printf("\n----------------------------------------------------\n\n\n");
@@ -329,7 +329,7 @@ void exercicio014(){
 void exercicio015(){
     int x, n, potencia;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_015\n");
     printf("\nFavor informar o primeiro numero x: ");
     scanf("%i", &x);
@@ -343,6 +343,9 @@ void exercicio015(){
 void exercicio016(){
     char vetor[50], i;
     int n;
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_016\n");
     
     printf("\nDigite uma palavra ");
     gets(vetor);
@@ -359,7 +362,7 @@ void exercicio016(){
 
 void exercicio017(){
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_017\n");
     printf("\n       x\n      oxo\n     xxxxx\n    oxxxxxo\n   oxxxxxxxo\n  xxxxxxxxxxx\n oxxxxxxxxxxxo\noxxxxxxxxxxxxxxo\n      xxxx\n       xx\n       xx\n      xxxx\n");
     printf("\n----------------------------------------------------\n\n\n");
@@ -369,7 +372,7 @@ void exercicio017(){
 void exercicio018(){
     int i, j, n;
 
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_018\n");
     printf("\nEntre com um valor de 2 a 20: ");
     printf("\nDigite um número\n");
@@ -393,7 +396,7 @@ void exercicio018(){
 void exercicio019(){
     int l, c, mult, escolha, num, i, j;
  
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_019\n");
     
     printf("Digite o tamanho da matriz.\n");
@@ -464,7 +467,7 @@ void exercicio020(){
     int i, j;
     int a[3][3];
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_020\n");
 
     printf("Digite os valores da matriz.");
@@ -496,7 +499,7 @@ void exercicio020(){
 void exercicio021(){
     int n, i, soma = 0;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_021\n");
     
     printf("\nFavor informar uma quantidade de numeros: ");
@@ -516,7 +519,7 @@ void exercicio021(){
 void exercicio022(){
     int iMatriz[3][3], i= 0, j=0;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_022\n");
     
     printf("Digite os valores da matriz.");
@@ -544,7 +547,7 @@ void exercicio022(){
 void exercicio023(){
     double litrosUsados, tempo, velMedia, distancia, tempoConvertido;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_023\n");
     
     printf("\nFavor informar o tempo da sua viagem em minutos: ");
@@ -563,7 +566,7 @@ void exercicio023(){
 void exercicio024(){
     int a, b, c;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_024\n");
     
     printf("Digite o primeiro valor para A: ");
@@ -585,7 +588,7 @@ void exercicio024(){
 void exercicio025(){
     float salarioBruto, salarioLiquido;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_025\n");
     
     printf("Favor informar o seu salario: ");
@@ -601,7 +604,7 @@ void exercicio025(){
 void exercicio026() {
     int idade, idadeDias;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_026\n");
     
     printf("Favor informar a sua idade: ");
@@ -616,7 +619,7 @@ void exercicio026() {
 void exercicio027() {
     int valor, valorPago, troco, cem, dezena, unidade, cemNum, dezenaNum, unidadeNum;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_027\n");
     
     printf("Qual o valor da sua compra? ");
@@ -643,7 +646,7 @@ void exercicio027() {
 void exercicio028() {
     double salMin, salTotal, comissao = 50, quantCarroVendido, valorCarro, valorVenda;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_028\n");
     
     printf("Informe o valor do salario minimo: R$ ");
@@ -664,7 +667,7 @@ void exercicio028() {
 void exercicio029() {
     double x, y, z;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_029\n");
     
     printf("Informe a primeira medida para um triangulo: ");
@@ -693,7 +696,7 @@ void exercicio029() {
 void exercicio030() {
     int n, i, j, x;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_030\n");
     
     printf("\nFavor digitar um numero inteiro de 2 a 20: ");
@@ -719,7 +722,7 @@ void exercicio030() {
 void exercicio031() {
     int vet[5], a = 0, i;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_031\n");
     
     for (i=0; i<5; i++) {
@@ -736,7 +739,7 @@ void exercicio032() {
     double mediaSalario, somaSalario = 0, percent;
     int n, numFilhos, i, somaFilhos = 0, mediaFilhos;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_032\n");
     
     printf("Quantas pessoas serao entrevistadas? ");
@@ -765,7 +768,7 @@ void exercicio033() {
     double alturaChico = 1.50, alturaZe = 1.10;
     int ano;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_033\n");
     
     ano = 0;
@@ -787,7 +790,7 @@ void exercicio033() {
 void exercicio034() {
     int num = 0, maior = 0, menor = 0, i;
     
-    printf("----------------------------------------------------\n");
+    printf("\n----------------------------------------------------\n");
     printf("\nExercicio_034\n");
 
     menor = num;
@@ -808,8 +811,306 @@ void exercicio034() {
     printf("\n----------------------------------------------------\n\n\n");
 }
 
-int main() {
+void exercicio035() {
+    
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_035\n");
 
+}
+
+void exercicio036() {
+    
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_036\n");
+    
+}
+
+void exercicio037() {
+    double precoTotal, quant;
+    int codigo;
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_037\n");
+    printf("Favor informar a quantidade de produtos comprados: \n");
+    scanf("%lf", &quant);
+    printf("\nFavor informar o codigo do produto:\n 1001 Maca\n 1324 Uva\n 6548 Banana\n 1987 Pera\n 7623 Manga \n\n\t");
+    scanf("%i", &codigo);
+    
+    switch (codigo) {
+            
+        case 1001:
+            precoTotal = quant * 5.32;
+            printf("\nO preco a pagar por %.2lf Kg de Maca eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+            
+        case 1324:
+            precoTotal = quant * 6.45;
+            printf("\nO preco a pagar por %.2lf Kg de Uva eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+            
+        case 6548:
+            precoTotal = quant * 2.37;
+            printf("\nO preco a pagar por %.2lf Kg de Banana eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+            
+        case 1987:
+            precoTotal = quant * 5.32;
+            printf("\nO preco a pagar por %.2lf Kg de Pera eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+            
+        case 7603:
+            precoTotal = quant * 6.45;
+            printf("\nO preco a pagar por %.2lf Kg de Manga eh: R$ %.2lf\n", quant, precoTotal);
+            printf("----------------------------------------------------\n\n\n");
+            break;
+    }
+}
+
+int main() {
+    int exercicio, resp;
+    
+    do
+    {
+        printf("\nQual exercicio você deseja executar?\nDigite de 1 a 37 para escolher. ");
+        scanf("%i", &exercicio);
+        switch (exercicio) {
+            case 1 :{
+                printf("\n\nConstrua um algoritmo que, tendo como dados de entrada dois pontos quaisquer no plano, P(x1,y1) e P(x2,y2), escreva a distância entre eles.\n\n");
+                exercicio001();
+            }
+                break;
+                
+            case 2: {
+                printf("\n\nEscreva um algoritmo que leia três números inteiros e positivos (A, B, C) e calcule a seguinte expressão: D=(R+S)/2, onde R=(A+B)^2 e S(B+C)^2\n\n");
+                exercicio002();
+            }
+                break;
+                
+            case 3 : {
+                printf("\n\nFaça um algoritmo que leia a idade de uma pessoa expressa em dias e mostre-a expressa em anos, meses e dias.\n\n");
+                exercicio003();
+            }
+                break;
+                
+            case 4 : {
+                printf("\n\nFaça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5, respectivamente.\n\n");
+                exercicio004();
+            }
+                break;
+            
+            case 5 : {
+                printf("\n\nO custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor seja de 28%% e os impostos de 45%%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao consumidor.\n\n");
+                exercicio005();
+            }
+                break;
+                
+            case 6 : {
+                printf("\n\nDado um número inteiro positivo n, calcular a soma dos n primeiros números inteiros positivos.\n\n");
+                exercicio006();
+            }
+                break;
+            
+            case 7 : {
+                printf("\n\nElaborar um algoritmo que lê 2 valores a e b e os escreve com a mensagem: \"SÃO MULTIPLOS\" ou \"NÃO SÃO MULTIPLOS\".");
+                exercicio007();
+            }
+                break;
+                
+            case 8 : {
+                printf("\n\nElabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:\nInfantil A - 5 - 7 anos\nInfantil B - 8 -10 anos\nJuvenil A - 11 - 13 anos\nJuvenil B - 14 - 17 anos\nAdulto - maiores de 18 anos.");
+                exercicio008();
+            }
+                break;
+                
+            case 9 : {
+                printf("\n\nUm usuário deseja um algoritmo onde possa escolher que tipo de média deseja calcular a partir de 3 notas. Faça um algoritmo que leia as notas, a opção escolhida pelo usuário e calcule a média.\n1 - aritmética\n2 - ponderada (3,3,4)\n3 - harmônica");
+                exercicio009();
+            }
+                break;
+                
+            case 10 : {
+                printf("\n\nUm vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo:\n\nCódigo do Produto\t\tPreço unitário\n1001\t\t\t\t\tR$ 5,32\n1324\t\t\t\t\tR$ 6,45\n6548\t\t\t\t\tR$ 2,37\n1987\t\t\t\t\tR$ 5,32\n7623\t\t\t\t\tR$ 6,45");
+                exercicio010();
+            }
+                break;
+                
+            case 11 : {
+                printf("\n\nFaça um algoritmo para calcular a área de uma circunferência, considerando a fórmula AREA = π * RAIO^2​. Utilize as variáveis AREA e RAIO, a constante π (pi = 3.14159) e os operadores aritméticos de multiplicação.");
+                exercicio011();
+            }
+                break;
+                
+            case 12 : {
+                printf("\n\nFaça um algoritmo que calcule a área de um triângulo, considerando a fórmula Area = (BASE*ALTURA)/2. Utilize as variáveis AREA, BASE e ALTURA e os operadores aritméticos de multiplicação e divisão.");
+                exercicio012();
+            }
+                break;
+               
+            case 13 : {
+                printf("\n\nDado um número inteiro positivo n, imprimir os n primeiros naturais ímpares. Exemplo: Para n=4 a saída deverá ser 1,3,5,7.");
+                exercicio013();
+            }
+                break;
+                
+            case 14 : {
+                printf("\n\nEscrever um programa que mostre a seguinte figura no alto da tela: \nXXXXX\nX   X\nX   X\nX   X\nXXXXX");
+                exercicio014();
+            }
+                break;
+                
+            case 15 : {
+                printf("\n\nDados um inteiro x e um inteiro não-negativo n, calcular x^n​ ​.");
+                exercicio015();
+            }
+                break;
+            
+            case 16 : {
+                printf("\n\nFaça uma função que retorne a posição de um dado caracter dentro de uma string.");
+                exercicio016();
+            }
+                break;
+                
+            case 17 : {
+                printf("\n\nImplemente um programa que desenhe um \"pinheiro\" na tela, similar ao abaixo.(Enriqueça o desenho com outros caracteres, simulando enfeites)\n       x\n      oxo\n     xxxxx\n    oxxxxxo\n   oxxxxxxxo\n  xxxxxxxxxxx\n oxxxxxxxxxxxo\noxxxxxxxxxxxxxxo\n      xxxx\n       xx\n       xx\n      xxxx\n");
+                exercicio017();
+            }
+                break;
+                
+            case 18 : {
+                printf("\n\nCrie um programa que leia um número entre 2 e 20 e gere uma tela com a seguinte configuração:\n                       Digite um número: 4\nSaida do programa:\n1\n12\n123\n1234\n123\n12\n1");
+                exercicio018();
+            }
+                break;
+                
+            case 19 : {
+                printf("\n\nCrie uma função capaz de multiplicar uma linha de uma matriz por um dado número. Faça o mesmo para uma coluna.");
+                exercicio019();
+            }
+                break;
+                
+            case 20 : {
+                printf("\n\nCrie uma função capaz de substituir todos os números negativos de uma matriz por seu módulo.");
+                exercicio020();
+            }
+                break;
+                
+            case 21 : {
+                printf("\n\nDados ​n ​e uma seqüência de ​n​ números inteiros, determinar a soma dos números pares.");
+                exercicio021();
+            }
+                break;
+                
+            case 22 : {
+                printf("\n\nEscreva um programa que lê uma matriz quadrada 3x3 e apresenta na tela a sua matriz transposta.");
+                exercicio022();
+            }
+                break;
+                
+            case 23 : {
+                printf("\n\nFaça um algoritmo que calcule a quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz 12Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto na viagem e a velocidade média durante ela. Desta forma, será possível obter a distância percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE. Tendo o valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula: LITROS_USADOS = DISTANCIA / 12. O programa deve apresentar os valores da velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.");
+                exercicio023();
+            }
+                break;
+                
+            case 24 : {
+                printf("\n\nFaça um algoritmo que leia dois valores para as variáveis A e B e efetue a troca dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresente os valores trocados.");
+                exercicio024();
+            }
+                break;
+                
+            case 25 : {
+                printf("\n\nConsidere a seguinte situação: descontam-se inicialmente 10%% do salário bruto do trabalhador como contribuição à previdência social. Após esse desconto, há um outro desconto de 5%% sobre o valor restante do salário bruto, a título de um determinado imposto. Faça um algoritmo que leia o salário bruto de um cidadão e imprima o seu salário líquido.");
+                exercicio025();
+            }
+                break;
+                
+            case 26 : {
+                printf("\n\nEscreva um algoritmo que determine o número de dias que uma pessoa já viveu. Considere que um mês tenha 30 dias.");
+                exercicio026();
+            }
+                break;
+                
+            case 27 : {
+                printf("\n\nSuponha que um caixa disponha apenas de notas de 1, 10 e 100 reais. Considerando que alguém está pagando uma compra, escreva um algoritmo que mostre o número mínimo de notas que o caixa deve fornecer como troco. Mostre também: o valor da compra, o valor do troco e a quantidade de cada tipo de nota do troco. Suponha que o sistema monetário não utilize moedas.");
+                exercicio027();
+            }
+                break;
+                
+            case 28 : {
+                printf("\n\nA revendedora de carros Pica-Pau Ltda. paga aos seus funcionários vendedores dois salários mínimos fixos, mais uma comissão fixa de R$ 50,00 por carro vendido e mais 5%% do valor das vendas. Faça um algoritmo que determine o salário total de um vendedor.");
+                exercicio028();
+            }
+                break;
+                
+            case 29 : {
+                printf("\n\nDados três valores X, Y e Z, verificar se eles podem ser os comprimentos dos lados de um triângulo, e se forem, verificar se é um triângulo equilátero, isóscele ou escaleno. Se eles não formarem um triângulo, escrever uma mensagem.");
+                exercicio029();
+            }
+                break;
+                
+            case 30 : {
+                printf("\n\nCrie um programa que leia um número entre 2 e 20 e gere uma tela com a seguinte configuração:\nDigite um número: 7\nSaida do programa:\n1234567\nx123456\nxx12345\nxxx1235\nxxxx123\nxxxxx12\nxxxxxx1\n");
+                exercicio030();
+            }
+                break;
+                
+            case 31 : {
+                printf("\n\nEscrever um algoritmo que lê 5 valores para a, um de cada vez, e conta quantos destes valores são negativos, escrevendo esta informação.");
+                exercicio031();
+            }
+                break;
+                
+            case 32 : {
+                printf("\n\nA prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salário e número de filhos. A prefeitura deseja saber:\n\ta) média do salário da população;\n\tb) média do número de filhos;\n\tc) maior salário;\n\td) percentual de pessoas com salário até R$100,00. O final da leitura de dados se dará com a entrada de um salário negativo. (Use o comando WHILE)");
+                exercicio032();
+            }
+                break;
+                
+            case 33 : {
+                printf("\n\nChico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 3 centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão necessários para que Zé seja maior que Chico.");
+                exercicio033();
+            }
+                break;
+                
+            case 34 : {
+                printf("\n\nEscreva um algoritmo que leia 50 valores e encontre o maior e o menor deles. Mostre o resultado.");
+                exercicio034();
+            }
+                break;
+                
+            case 35 : {
+                printf("\n\nFoi realizada uma pesquisa de algumas características físicas da população de uma certa região, a qual coletou os seguintes dados referentes a cada habitante para serem analisados:\n\t- idade\n\t- sexo (masculino e feminino)\n\t- cor dos olhos (1 - azuis, 2 - verdes ou 3 - castanhos)\n\t- cor dos cabelos (1 - louros, 2 - castanhos, 3 - pretos)\n\nFaça um algoritmo que determine e escreva:\n\t\t- a maior idade dos habitantes\n\t\t- a quantidade de indivíduos do sexo feminino cuja idade está entre 18 e 35 anos inclusive e que tenham olhos verdes e cabelos louros.\n\t\tO final do conjunto de habitantes é reconhecido pelo valor -1 entrada como idade.");
+                exercicio035();
+            }
+                break;
+                
+            case 36 : {
+                printf("\n\nEscrever um algoritmo que leia 20 valores para uma variável n e, para cada um deles, calcule a tabuada de 1 até n. Mostre a tabuada na forma:\n\t1xn=n\n\t2 x n = 2n\n\t3 x n = 3n\n\t.......\n\tn x n = n^2");
+                exercicio036();
+            }
+                break;
+                
+            case 37 : {
+                printf("\n\nUm vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total (deve receber estas informações até o usuário digitar -1 para o código) e apresentar o total da compra, usando a tabela abaixo:\n\nCódigo do produto\t\tPreço unitário\n1001\t\t\t\t\tR$ 5,32\n1324\t\t\t\t\tR$ 6,45\n6548\t\t\t\t\tR$ 2,37\n1987\t\t\t\t\tR$ 5,32\n7623\t\t\t\t\tR$ 6,45");
+                exercicio037();
+            }
+                break;
+                
+            default:
+                
+                break;
+        }
+        printf("\nVoce deseja fazer outro exercicio?\n");
+        printf("\nDigite 1 para continuar ou 2 para sair.");
+        scanf("%i", &resp);
+        
+    } while (resp == 1);
     
 
 }
