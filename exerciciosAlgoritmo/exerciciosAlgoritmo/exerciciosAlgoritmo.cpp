@@ -717,6 +717,7 @@ void exercicio030() {
             }
         } printf("\n");
     }
+    printf("\n----------------------------------------------------\n\n\n");
 }
 
 void exercicio031() {
@@ -752,11 +753,12 @@ void exercicio032() {
     printf("\n----------------------------------------------------\n");
     printf("\nExercicio_032\n");
     
+    
     printf("Quantas pessoas serao entrevistadas? ");
     scanf("%i", &n);
     
     double salario[n];
-    
+    do {
     for (i=0; i<n; i++) {
         printf("Informe o valor do salario da pessoa %i: ", i+1);
         scanf("%lf", &salario[i]);
@@ -783,11 +785,14 @@ void exercicio032() {
         }
         percent = (salarioMenor*100)/countSal;
     }
-
     printf("\nA media do salario da populacao eh de R$ %.2lf", mediaSalario);
     printf("\nA media do numero de filhos eh %.2lf", mediaFilhos);
     printf("\nO maior salário eh R$ %.2lf", maior);
     printf("\nO percentual de salários menor de R$ 100,00 é de %.2lf%%.\n", percent);
+    printf("\n----------------------------------------------------\n\n\n");
+    
+    } while (salario[i] >= 0.0);
+    
 }
 
 void exercicio033() {
@@ -838,11 +843,91 @@ void exercicio034() {
 }
 
 void exercicio035() {
+    int maiorIdade, countTotal, olhos, countAzuis, countVerdes, countPretos, cabelo, countCabeloLouro, countCabeloCastanho, countCabeloPreto, sexo, countMasc, countFem, i, n;
     
+    maiorIdade = 0;
+    countMasc = 0;
+    countFem = 0;
+    countAzuis = 0;
+    countVerdes = 0;
+    countPretos = 0;
+    countCabeloLouro = 0;
+    countCabeloCastanho = 0;
+    countCabeloPreto = 0;
+    countTotal = 0;
     
     printf("\n----------------------------------------------------\n");
     printf("\nExercicio_035\n");
+
+    printf("Quantas pessoas serao entrevistadas? ");
+    scanf("%i", &n);
     
+    int vetIdade[n];
+    
+    for (i=0; i<n; i++) {
+        printf("Qual a idade da pessoa %i? ", i+1);
+        scanf("%i", &vetIdade[i]);
+        if (vetIdade[i] > maiorIdade) {
+            maiorIdade = vetIdade[i];
+        }
+    }
+    for (i=0; i<n; i++) {
+        printf("\nInforme o sexo da pessoa %i.\n\t1 MASCULINO\n\t2 FEMININO\nResposta: ", i+1);
+        scanf("%i", &sexo);
+        switch (sexo) {
+            case 1:
+                countMasc += 1;
+                break;
+            case 2:
+                countFem += 1;
+                break;
+        }
+    }
+    for (i=0; i<n; i++) {
+        printf("\nInforme a cor dos olhos da pessoa %i.\n\t1 AZUIS\n\t2 VERDES\n\t3 PRETOS\nResposta: ", i+1);
+        scanf("%i", &olhos);
+        switch (olhos) {
+            case 1:
+                countAzuis += 1;
+                break;
+            case 2:
+                countVerdes += 1;
+                break;
+            case 3:
+                countPretos += 1;
+                break;
+        }
+    }
+    
+    for (i=0; i<n; i++) {
+        printf("\nInforme a cor dos cabelos da pessoa %i.\n\t1 LOUROS\n\t2 CASTANHOS\n\t3 PRETOS\nResposta: ", i+1);
+        scanf("%i", &cabelo);
+        switch (cabelo) {
+            case 1:
+                countCabeloLouro += 1;
+                break;
+            case 2:
+                countCabeloCastanho += 1;
+                break;
+            case 3:
+                countCabeloPreto += 1;
+                break;
+        }
+    }
+    
+    for (i=0; i<n; i++) {
+        if (sexo = countFem) {
+            if(vetIdade[i] >= 18 && vetIdade[i] <= 35) {
+                if (olhos = countVerdes) {
+                    if (cabelo = countCabeloLouro) {
+                        countTotal += 1;
+                    }
+                }
+            }
+        }
+    }
+    printf("\nA maior idade dos habitantes é: %i", maiorIdade);
+    printf("\nA quantidade de indivíduos do sexo feminino entre 18 e 35 anos, de olhos azuis e cabelos louros é: %i", countTotal);
 }
 
 void exercicio036() {
