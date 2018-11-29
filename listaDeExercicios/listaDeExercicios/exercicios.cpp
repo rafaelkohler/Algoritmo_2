@@ -775,17 +775,41 @@ void exercicio033() {
         alturaChico = alturaChico + 0.02;
         ano = ano + 1;
         
-    } while (alturaChico >= alturaZe);
+    } while (alturaChico > alturaZe);
     
-    printf("\n%d anos deverao ser necessarios para que Ze seja maior que Chico." , ano);
-    printf("\n%.2lf metros sera a altura de Ze daqui a %i anos", alturaZe, ano);
-    printf("\n%.2lf metros sera a altura de Chico daqui a %i anos", alturaChico, ano);
+    printf("\n%d anos deverao ser necessarios para que Ze seja maior que Chico.\n" , ano);
+    printf("\nZe tera %.2lf metros de altura daqui %i anos", alturaZe, ano);
+    printf("\nChico tera %.2lf metros de altura daqui %i anos", alturaChico, ano);
     
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
+void exercicio034() {
+    int num = 0, maior = 0, menor = 0, i;
+    
+    printf("----------------------------------------------------\n");
+    printf("\nExercicio_034\n");
+
+    menor = num;
+    maior = num;
+    
+    for(i=0; i<50; i++) {
+        printf("Digite um numero: ");
+        scanf("%i",&num);
+        if(num > maior) {
+            maior = num;
+        }
+        if(num < menor) {
+            menor = num;
+        }
+    }
+    
+    printf ("\nO MENOR valor eh: %i e o MAIOR valor eh: %i\n",menor, maior);
     printf("\n----------------------------------------------------\n\n\n");
 }
 
 int main() {
 
-    exercicio033();
+    
 
 }
