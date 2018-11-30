@@ -20,6 +20,74 @@ double exponencial (double x, double y) {
     return result = pow((x + y), 2);
 }
 
+struct Pesquisa {
+    float salario;
+    int filhos;
+};
+
+void lerDadosPesquisaExercicio032() {
+    double mediaSalario, somaSalario, percent, mediaFilhos, somaFilhos, maior, menor, salarioMenor, countSal;
+    int n, numFilhos, i;
+    
+    numFilhos = 0;
+    mediaSalario = 0;
+    somaSalario = 0;
+    percent = 0;
+    mediaFilhos = 0;
+    somaFilhos = 0;
+    maior = 0;
+    menor = 0;
+    salarioMenor = 0;
+    countSal = 0;
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_032\n");
+    
+    printf("Quantas pessoas serao entrevistadas? ");
+    scanf("%i", &n);
+    
+    struct Pesquisa pesquisas[n];
+//    double salario[n];
+    do {
+        for (i=0; i<n; i++) {
+            printf("Informe a quantidade de filhos da pessoa %i ", i+1);
+            scanf("%i", &pesquisas[i].filhos);
+            somaFilhos += pesquisas[i].filhos + 1;
+            mediaFilhos = somaFilhos / n-1;
+        }
+        for (i=0; i<n; i++) {
+            printf("Informe o valor do salario da pessoa %i: ", i+1);
+            scanf("%f", &pesquisas[i].salario);
+            if(pesquisas[i].salario <0){
+                break;
+            }
+            somaSalario += pesquisas[i].salario;
+            countSal += 1;
+            mediaSalario = somaSalario / n;
+        }
+        for (i=0; i<n; i++) {
+            if (pesquisas[i].salario > maior) {
+                maior = pesquisas[i].salario;
+            } else {
+                menor = pesquisas[i].salario;
+            }
+        }
+        for (i=0; i<n; i++) {
+            if (pesquisas[i].salario <= 100) {
+                salarioMenor += 1;
+            }
+            percent = (salarioMenor*100)/countSal;
+        }
+        printf("\nA media do salario da populacao eh de R$ %.2lf", mediaSalario);
+        printf("\nA media do numero de filhos eh %.2lf", mediaFilhos);
+        printf("\nO maior salário eh R$ %.2lf", maior);
+        printf("\nO percentual de salários menor de R$ 100,00 é de %.2lf%%.\n", percent);
+        printf("\n----------------------------------------------------\n\n\n");
+    
+    } while (pesquisas[i-2].salario >= 0.0);
+
+}
+
 void exercicio001 () {
     double x1, y1, x2, y2, d;
     
@@ -737,62 +805,7 @@ void exercicio031() {
 }
 
 void exercicio032() {
-    double mediaSalario, somaSalario, percent, mediaFilhos, somaFilhos, maior, menor, salarioMenor, countSal;
-    int n, numFilhos, i;
-    
-    mediaSalario = 0;
-    somaSalario = 0;
-    percent = 0;
-    mediaFilhos = 0;
-    somaFilhos = 0;
-    maior = 0;
-    menor = 0;
-    salarioMenor = 0;
-    countSal = 0;
-    
-    printf("\n----------------------------------------------------\n");
-    printf("\nExercicio_032\n");
-    
-    
-    printf("Quantas pessoas serao entrevistadas? ");
-    scanf("%i", &n);
-    
-    double salario[n];
-    do {
-    for (i=0; i<n; i++) {
-        printf("Informe o valor do salario da pessoa %i: ", i+1);
-        scanf("%lf", &salario[i]);
-        somaSalario += salario[i];
-        countSal += 1;
-        mediaSalario = somaSalario / n;
-    }
-    for (i=0; i<n; i++) {
-        printf("Informe a quantidade de filhos da pessoa %i ", i+1);
-        scanf("%i", &numFilhos);
-        somaFilhos += numFilhos + 1;
-        mediaFilhos = somaFilhos / n-1;
-    }
-    for (i=0; i<n; i++) {
-        if (salario[i] > maior) {
-            maior = salario[i];
-        } else {
-            menor = salario[i];
-        }
-    }
-    for (i=0; i<n; i++) {
-        if (salario[i] <= 100) {
-            salarioMenor += 1;
-        }
-        percent = (salarioMenor*100)/countSal;
-    }
-    printf("\nA media do salario da populacao eh de R$ %.2lf", mediaSalario);
-    printf("\nA media do numero de filhos eh %.2lf", mediaFilhos);
-    printf("\nO maior salário eh R$ %.2lf", maior);
-    printf("\nO percentual de salários menor de R$ 100,00 é de %.2lf%%.\n", percent);
-    printf("\n----------------------------------------------------\n\n\n");
-    
-    } while (salario[i] >= 0.0);
-    
+    lerDadosPesquisaExercicio032();
 }
 
 void exercicio033() {
@@ -1178,7 +1191,7 @@ int main() {
                 break;
                 
             case 32 : {
-                printf("\n\nA prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salário e número de filhos. A prefeitura deseja saber:\n\ta) média do salário da população;\n\tb) média do número de filhos;\n\tc) maior salário;\n\td) percentual de pessoas com salário até R$100,00. O final da leitura de dados se dará com a entrada de um salário negativo. (Use o comando WHILE)");
+                printf("\n\nA prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salário e número de filhos. A prefeitura deseja saber:\n\ta) média do salário da população;\n\tb) média do número de filhos;\n\tc) maior salário;\n\td) percentual de pessoas com salário até R$100,00. O final da leitura de dados se dará com a entrada de um salário negativo. (Use o comando WHILE)\n\n");
                 exercicio032();
             }
                 break;
