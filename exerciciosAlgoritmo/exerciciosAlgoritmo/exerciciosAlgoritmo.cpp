@@ -43,11 +43,10 @@ void lerDadosPesquisaExercicio032() {
     printf("\n----------------------------------------------------\n");
     printf("\nExercicio_032\n");
     
-    printf("Quantas pessoas serao entrevistadas? ");
+    printf("Quantas pessoas serão entrevistadas? ");
     scanf("%i", &n);
     
     struct Pesquisa pesquisas[n];
-//    double salario[n];
     do {
         for (i=0; i<n; i++) {
             printf("Informe a quantidade de filhos da pessoa %i ", i+1);
@@ -86,6 +85,150 @@ void lerDadosPesquisaExercicio032() {
     
     } while (pesquisas[i-2].salario >= 0.0);
 
+}
+
+struct Olhos {
+    char olhosAzuis [10];
+    char olhosVerdes [10];
+    char olhosCastanhos [10];
+};
+
+struct Cabelos {
+    char cabelosLouros [10];
+    char cabelosCastanhos [10];
+    char cabelosPretos[10];
+};
+
+struct PesquisaCaracteristica {
+    int idade;
+    char masculino [10];
+    char feminino [10];
+    struct Olhos cor;
+    struct Cabelos corCabelo;
+};
+
+void lerDadosPesquisaExercicio035() {
+    int maiorIdade, countTotal, countVerdes, countCabeloLouro, countFem, i, n, countIdade;
+    
+    maiorIdade = 0;
+    countFem = 0;
+    countVerdes = 0;
+    countCabeloLouro = 0;
+    countTotal = 0;
+    countIdade = 0;
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_035\n");
+    
+    printf("Quantas pessoas serão entrevistadas? ");
+    scanf("%i", &n);
+    struct PesquisaCaracteristica caracteristica[n];
+    
+    for (i=0; i<n; i++) {
+        printf("Qual a idade da pessoa %i? ", i+1);
+        scanf("%i", &caracteristica[i].idade);
+        getc(stdin);
+        if (caracteristica[i].idade > maiorIdade) {
+            maiorIdade = caracteristica[i].idade;
+        }
+        if (caracteristica[i].idade >= 18 && caracteristica[i].idade <= 35) {
+            countIdade += 1;
+        }
+        printf("\nInforme o sexo da pessoa %i. ", i+1);
+        if (static_cast<void>("%s"), &caracteristica[i].masculino) {
+            fgets(caracteristica[i].masculino, 10, stdin);
+            
+        } else {
+            static_cast<void>("%s"), &caracteristica[i].feminino;
+            fgets(caracteristica[i].feminino, 10, stdin);
+            countFem += 1;
+        }
+        printf("\nInforme a cor dos olhos da pessoa %i.\n\tAZUIS\n\tVERDES\n\tCASTANHOS\n ", i+1);
+        if (static_cast<void>("%s"), &caracteristica[i].cor.olhosAzuis) {
+            fgets(caracteristica[i].cor.olhosAzuis, 10, stdin);
+        } else if (static_cast<void>("%s"), &caracteristica[i].cor.olhosVerdes) {
+            fgets(caracteristica[i].cor.olhosVerdes, 10, stdin);
+            countVerdes += 1;
+        } else {
+            static_cast<void>("%s"), &caracteristica[i].cor.olhosCastanhos;
+            fgets(caracteristica[i].cor.olhosCastanhos, 10, stdin);
+        }
+        printf("\nInforme a cor dos cabelos da pessoa %i.\n\tLOUROS\n\tCASTANHOS\n\tPRETOS\n ", i+1);
+        if (static_cast<void>("%s"), &caracteristica[i].corCabelo.cabelosLouros) {
+            fgets(caracteristica[i].corCabelo.cabelosLouros, 10, stdin);
+            countCabeloLouro += 1;
+        } else if (static_cast<void>("%s"), &caracteristica[i].corCabelo.cabelosCastanhos) {
+            fgets(caracteristica[i].corCabelo.cabelosCastanhos, 10, stdin);
+        } else {
+            static_cast<void>("%s"), &caracteristica[i].corCabelo.cabelosPretos;
+            fgets(caracteristica[i].corCabelo.cabelosPretos, 10, stdin);
+        }
+    }
+    for (i=0; i<n; i++) {
+        if (caracteristica[i].idade >= 18 && caracteristica[i].idade <= 35 && caracteristica[i].feminino && caracteristica[i].cor.olhosVerdes && caracteristica[i].corCabelo.cabelosLouros) {
+            countTotal += 1;
+        }
+    }
+    printf("\nA maior idade dos habitantes é: %i", maiorIdade);
+    printf("\nA quantidade de indivíduos do sexo feminino entre 18 e 35 anos, de olhos verdes e cabelos louros é: %i", countTotal);
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
+struct hm {
+    int horas;
+    int minutos;
+};
+
+void lerDadosPesquisaExercicio038() {
+    hm w;
+    int x, y;
+    
+    printf("\n----------------------------------------------------\n");
+    printf("\nExercicio_038\n");
+    
+    printf("Informe a quantidade de minutos que você gostaria de converte em horas e minutos: ");
+    scanf("%i",&w.minutos);
+    y = w.minutos/60;
+    x = w.minutos%60;
+    printf("\nO horário convertido é: %ih e %i minutos.\n\n", y, x);
+    printf("\n----------------------------------------------------\n\n\n");
+}
+
+struct Pessoa{
+    char  nome[100];
+    char  sexo; // 'm': masculino, 'f': femino
+    float peso;
+    float altura;
+    float cpf;
+};
+
+void lerDadosExercicio039() {
+    int n;
+    
+    printf("Quantas pessoas serão entrevistadas? ");
+    scanf("%i", &n);
+    struct Pessoa pessoa[n];
+
+    printf("Favor preencher os seus dados na seguinte ordem:\nNome\nAltura\nPeso\nCPF\nSexo\n");
+    for(int i=0; i < n; i++){
+        printf("\nInforme os dados da pessoa(%i): ",i+1);
+        scanf("%s %f %f %f %c",pessoa[i].nome, &pessoa[i].altura,
+              &pessoa[i].peso, &pessoa[i].cpf, &pessoa[i].sexo);
+    }
+
+    printf("\nInforme o CPF da pessoa: ");
+    long long cpf_localizador;
+    scanf("%Lu",&cpf_localizador);
+    
+    printf("\nSexo\tNome\tIMC");
+    for(int i=0; i < n; i++){ //2
+        if (cpf_localizador == pessoa[i].cpf){
+            float imc = pessoa[i].peso / (pessoa[i].altura * pessoa[i].altura);
+            printf("\n%c\t%s\t%1.2f\n",pessoa[i].sexo, pessoa[i].nome, imc);
+            break;
+        }
+    }
+    getchar();
 }
 
 void exercicio001 () {
@@ -856,99 +999,25 @@ void exercicio034() {
 }
 
 void exercicio035() {
-    int maiorIdade, countTotal, olhos, countAzuis, countVerdes, countPretos, cabelo, countCabeloLouro, countCabeloCastanho, countCabeloPreto, sexo, countMasc, countFem, i, n;
-    
-    maiorIdade = 0;
-    countMasc = 0;
-    countFem = 0;
-    countAzuis = 0;
-    countVerdes = 0;
-    countPretos = 0;
-    countCabeloLouro = 0;
-    countCabeloCastanho = 0;
-    countCabeloPreto = 0;
-    countTotal = 0;
-    
-    printf("\n----------------------------------------------------\n");
-    printf("\nExercicio_035\n");
 
-    printf("Quantas pessoas serao entrevistadas? ");
-    scanf("%i", &n);
+    lerDadosPesquisaExercicio035();
     
-    int vetIdade[n];
-    
-    for (i=0; i<n; i++) {
-        printf("Qual a idade da pessoa %i? ", i+1);
-        scanf("%i", &vetIdade[i]);
-        if (vetIdade[i] > maiorIdade) {
-            maiorIdade = vetIdade[i];
-        }
-    }
-    for (i=0; i<n; i++) {
-        printf("\nInforme o sexo da pessoa %i.\n\t1 MASCULINO\n\t2 FEMININO\nResposta: ", i+1);
-        scanf("%i", &sexo);
-        switch (sexo) {
-            case 1:
-                countMasc += 1;
-                break;
-            case 2:
-                countFem += 1;
-                break;
-        }
-    }
-    for (i=0; i<n; i++) {
-        printf("\nInforme a cor dos olhos da pessoa %i.\n\t1 AZUIS\n\t2 VERDES\n\t3 PRETOS\nResposta: ", i+1);
-        scanf("%i", &olhos);
-        switch (olhos) {
-            case 1:
-                countAzuis += 1;
-                break;
-            case 2:
-                countVerdes += 1;
-                break;
-            case 3:
-                countPretos += 1;
-                break;
-        }
-    }
-    
-    for (i=0; i<n; i++) {
-        printf("\nInforme a cor dos cabelos da pessoa %i.\n\t1 LOUROS\n\t2 CASTANHOS\n\t3 PRETOS\nResposta: ", i+1);
-        scanf("%i", &cabelo);
-        switch (cabelo) {
-            case 1:
-                countCabeloLouro += 1;
-                break;
-            case 2:
-                countCabeloCastanho += 1;
-                break;
-            case 3:
-                countCabeloPreto += 1;
-                break;
-        }
-    }
-    
-    for (i=0; i<n; i++) {
-        if (sexo = countFem) {
-            if(vetIdade[i] >= 18 && vetIdade[i] <= 35) {
-                if (olhos = countVerdes) {
-                    if (cabelo = countCabeloLouro) {
-                        countTotal += 1;
-                    }
-                }
-            }
-        }
-    }
-    printf("\nA maior idade dos habitantes é: %i", maiorIdade);
-    printf("\nA quantidade de indivíduos do sexo feminino entre 18 e 35 anos, de olhos azuis e cabelos louros é: %i", countTotal);
 }
 
 void exercicio036() {
-    
+    int i, j, n;
     
     printf("\n----------------------------------------------------\n");
     printf("\nExercicio_036\n");
     
+    for(i = 0; i < 20; i++){
+        printf("Digite um número para o cálculo de sua tabuada de 1 a n x n\n");
+        scanf("%d", &n);
+        for(j = 1; j <= n; j++){
+            printf("%d x %d = %d\n", j, n, j * n);
+        }
+    }
+    printf("\n----------------------------------------------------\n\n\n");
 }
 
 void exercicio037() {
@@ -996,16 +1065,28 @@ void exercicio037() {
     }
 }
 
+void exercicio038() {
+    
+    lerDadosPesquisaExercicio038();
+    
+}
+
+void exercicio039(){
+    
+    lerDadosExercicio039();
+    
+}
+
 int main() {
     int exercicio, resp;
     
     do
     {
-        printf("\nQual exercicio você deseja executar?\nDigite de 1 a 37 para escolher. ");
+        printf("\nQual exercicio você deseja executar?\nDigite de 1 a 39 para escolher. ");
         scanf("%i", &exercicio);
         switch (exercicio) {
             case 1 :{
-                printf("\n\nConstrua um algoritmo que, tendo como dados de entrada dois pontos quaisquer no plano, P(x1,y1) e P(x2,y2), escreva a distância entre eles.\n\n");
+                printf("\n\nConstrua um algoritmo que, tendo como dados de entrada dois pontos quaisquer no plano, P(x1,y1) e P(x2,y2), escreva a distância entre eles.\n\n ");
                 exercicio001();
             }
                 break;
@@ -1226,12 +1307,20 @@ int main() {
             }
                 break;
                 
-            default:
-                
+            case 38 : {
+                printf("\n\nEscreva uma função que receba um número inteiro que representa um intervalo de tempo medido em minutos e devolva o correspondente número de horas e minutos (por exemplo, converte 131 minutos em 2 horas e 11 minutos). Use uma struct como  a seguinte:\n\nstruct hm {\nint horas;\nint\n};");
+                exercicio038();
+            }
+                break;
+        
+            case 39 : {
+                printf("\n\nEscrever um programa que cadastre o nome, a altura, o peso, o cpf e sexo de algumas pessoas. Com os dados cadastrados, em seguida localizar uma pessoas através do seu CPF e imprimir o seu IMC.\n\n");
+                exercicio039();
+            }
                 break;
         }
         printf("\nVoce deseja fazer outro exercicio?\n");
-        printf("\nDigite 1 para continuar ou 2 para sair.");
+        printf("\nDigite 1 para continuar ou 2 para sair. ");
         scanf("%i", &resp);
         
     } while (resp == 1);
