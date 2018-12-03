@@ -218,7 +218,7 @@ void lerDadosExercicio039() {
 
     printf("\nInforme o CPF da pessoa: ");
     long long cpf_localizador;
-    scanf("%Lu",&cpf_localizador);
+    scanf("%f",&cpf_localizador);
     
     printf("\nSexo\tNome\tIMC");
     for(int i=0; i < n; i++){ //2
