@@ -211,24 +211,21 @@ void lerDadosExercicio039() {
 
     printf("Favor preencher os seus dados na seguinte ordem:\nNome\nAltura\nPeso\nCPF\nSexo\n");
     for(int i=0; i < n; i++){
-        printf("\nInforme os dados da pessoa(%i): ",i+1);
+        printf("\nInforme os dados da pessoa(%i): \n", i+1);
         scanf("%s %f %f %f %c",pessoa[i].nome, &pessoa[i].altura,
               &pessoa[i].peso, &pessoa[i].cpf, &pessoa[i].sexo);
     }
 
     printf("\nInforme o CPF da pessoa: ");
-    long long cpf_localizador;
+    float cpf_localizador;
     scanf("%f",&cpf_localizador);
-    
-    printf("\nSexo\tNome\tIMC");
-    for(int i=0; i < n; i++){ //2
-        if (cpf_localizador == pessoa[i].cpf){
+    for(int i=0; i < n; i++){
+        if (cpf_localizador == pessoa[i].cpf) {
             float imc = pessoa[i].peso / (pessoa[i].altura * pessoa[i].altura);
-            printf("\n%c\t%s\t%1.2f\n",pessoa[i].sexo, pessoa[i].nome, imc);
-            break;
+            printf("\nOs dados do CPF informado são:\nNome: %s\nSexo: %c\nIMC: %.2f\n", pessoa[i].nome, pessoa[i].sexo, imc);
         }
     }
-    getchar();
+   printf("\n----------------------------------------------------\n\n\n");
 }
 
 void exercicio001 () {
