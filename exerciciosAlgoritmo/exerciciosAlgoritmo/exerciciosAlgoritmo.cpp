@@ -27,9 +27,8 @@ struct Pesquisa {
 
 void lerDadosPesquisaExercicio032() {
     double mediaSalario, somaSalario, percent, mediaFilhos, somaFilhos, maior, menor, salarioMenor, countSal;
-    int n, numFilhos, i;
+    int n, i;
     
-    numFilhos = 0;
     mediaSalario = 0;
     somaSalario = 0;
     percent = 0;
