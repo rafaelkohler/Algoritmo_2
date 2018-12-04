@@ -440,14 +440,14 @@ void exercicio010(){
     printf("\nExercicio_010\n");
     printf("Favor informar a quantidade de produtos comprados: \n");
     scanf("%lf", &quant);
-    printf("\nFavor informar o codigo do produto:\n 1001 Maca\n 1324 Uva\n 6548 Banana\n 1987 Pera\n 7623 Manga \n\n\t");
+    printf("\nFavor informar o codigo do produto:\n 1001 Maçã\n 1324 Uva\n 6548 Banana\n 1987 Pera\n 7623 Manga \n\n\t");
     scanf("%i", &codigo);
     
     switch (codigo) {
             
         case 1001:
             precoTotal = quant * 5.32;
-            printf("\nO preco a pagar por %.2lf Kg de Maca eh: R$ %.2lf\n", quant, precoTotal);
+            printf("\nO preco a pagar por %.2lf Kg de Maçã eh: R$ %.2lf\n", quant, precoTotal);
             printf("----------------------------------------------------\n\n\n");
             break;
             
@@ -1315,6 +1315,7 @@ int main() {
                 exercicio039();
             }
                 break;
+            
         }
         printf("\nVoce deseja fazer outro exercicio?\n");
         printf("\nDigite 1 para continuar ou 2 para sair. ");
